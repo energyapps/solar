@@ -78,44 +78,6 @@
 	background-size: 73px 43px !important; 		
 }
 
-/*Satellite*/
-			#sat-and-beam {
-				z-index: 59;
-				position: absolute;
-				top: 884px;
-				right: 0;
-				width: 60%;
-				height: 803px;
-				/*background-color: orange;*/
-				/*background-image:url('../images/final_images/beam.png');
-				background-repeat:no-repeat;
-				background-position:center;
-				background-size: 111px 203px;	*/
-			}
-
-			#sat-test {
-				z-index: 60;
-				position: absolute;
-				top: 0px;
-				left: 0px;
-				height: 100%;
-				width: 200px;
-				background-color: blue;
-				opacity: 0.5;
-
-			}
-
-			#sat-beam {
-				z-index: 60;
-				position: absolute;
-				top: 0px;
-				left: 200px;
-				height: 100%;
-				width: 600px;
-				background-color: pink;
-				opacity: 0.5
-			}
-
 			/*typography*/
 
 			.typography {
@@ -193,10 +155,41 @@
 	padding-top: 30px;	
 }
 
-#cb1 {top: 400px; left: 10%}
-#cb2 {top:450px; left: -25%;}
-#cb3 {top:200px; left: 25%;}
+#cb1 {top: 400px; left: 10%; position: relative;}
+#cb2 {top:450px; left: -25%; position: relative;}
+#cb3 {top:200px; left: 25%; position: relative;}
 
+
+/*First satellite */
+
+			#satellite-1-container {
+				position: absolute;
+				z-index: 52;
+				width: 100%;
+				/*background-color: rgba(0,0,0,0.4);*/
+				top: 1270px;
+				font-family: 'Dosis', sans-serif;				
+			}
+
+			#satellite-1-header {
+				position: relative;
+				left: 8%;				
+			}
+
+			.floating-header h3 {
+				text-transform: uppercase;
+				font-size: 25px;
+				line-height: auto;
+				color: #f15a24;
+				text-shadow: -2px 3px #333;
+			}
+
+			.floating-header h3 span{
+				font-size: 35px;
+				margin-top: -10px;
+				font-weight: 200;
+				vertical-align: -10%;
+			}
 </style>
 </head>
 
@@ -226,33 +219,109 @@
 		</div>
 
 		<!-- First content block -->
-		<div class="content-block" id="cb1"
-			data-0="opacity:0.5;"
-			data-100="opacity:1;">
-				<h2>Did You Know?</h2>
-				<p>Every hour, more solar energy reaches the earth than the earth uses in a year.</p>
-				<h2>About 30%</h2>
-				<p>of this energy is reflected back into space by the atmosphere.</p>
+		<div id="first-content">
+			<div class="content-block" id="cb1"
+				data-0="opacity:0.5;"
+				data-100="opacity:1;">
+					<h2>Did You Know?</h2>
+					<p>Every hour, more solar energy reaches the earth than the earth uses in a year.</p>
+					<h2>About 30%</h2>
+					<p>of this energy is reflected back into space by the atmosphere.</p>
+			</div>
+			<div class="content-block" id="cb2"
+				data-0="opacity:0.25;"
+				data-150="opacity:0.25"
+				data-500="opacity:1;">
+					<h2>Waste Not</h2>
+					<p>Since clouds, atmosphere and nighttime are absent in space, satellite-based solar panels would be able to capture and the store substantially more energy than terrestrial solar panels.</p>
+			</div>
+			<div class="content-block" id="cb3"
+				data-0="opacity:0.1;"
+				data-250="opacity:0.1"
+				data-700="opacity:1;">
+					<h2>How Does it Work?</h2>
+					<p>Launch solar panels into orbit aboard energy transmitting satellites. Collect high intensity, uninterrupted solar radiation. Giant mirrors reflect huge amounts of solar radiation onto smaller solar collectors. This radiation is then wirelessly beamed to earth in a safe and controlled was as either a microwave or laser beam.</p>
+			</div>
 		</div>
-		<div class="content-block" id="cb2"
-			data-0="opacity:0.25;"
-			data-150="opacity:0.25"
-			data-500="opacity:1;">
-				<h2>Waste Not</h2>
-				<p>Since clouds, atmosphere and nighttime are absent in space, satellite-based solar panels would be able to capture and the store substantially more energy than terrestrial solar panels.</p>
+
+		<style type="text/css">
+
+			/*Satellite*/
+			#sat-and-beam {
+				z-index: 59;
+				position: absolute;
+				top: 50px;
+				right: 0;
+				width: 85%;
+				height: 803px;
+				/*background-color: orange;*/
+				/*background-image:url('../images/final_images/beam.png');
+				background-repeat:no-repeat;
+				background-position:center;
+				background-size: 111px 203px;	*/
+			}
+
+			#sat-test {
+				z-index: 60;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				/*background-color: blue;*/
+				opacity: 0.5;
+			}
+			#sat-test img {
+				width: 100%;
+			}
+
+			#sat-beam {
+				z-index: 60;
+				position: absolute;
+				top: 0px;
+				left: 200px;
+				height: 100%;
+				width: 600px;
+				/*background-color: pink;*/
+				opacity: 0.5;
+			}
+
+			#floating-context-1 {
+				top: 100px;
+				left: 8%;
+			}
+
+			#floating-context-2 {
+				top: 450px;
+				left: 50%;
+				margin-left: -50px;
+			}
+
+			.floating-text {
+				position: absolute;			
+				color: #ffffff;
+				width: 100px;
+				text-align: center;
+				font-weight: 200;
+				font-size: 17px;
+			}
+		</style>
+
+<!-- First Satellite -->
+		<div id="satellite-1-container">
+			<div id="satellite-1-header" class="floating-header">
+				<h3><span>{&nbsp&nbsp</span>Microwave Solar Satellite<span>&nbsp&nbsp}</span></h3>
+			</div>
+			<div class="floating-text" id="floating-context-1">The length of the satellite would be 3km.</div>
+			<div class="floating-text" id="floating-context-2">The length of the satellite would be 3km.</div>
+			<div id="sat-and-beam">
+				<div id="sat-test">
+					<img src="../images/final_images/microwave.png">
+				</div>
+				<div id="sat-beam"></div>
+			</div>
+
 		</div>
-		<div class="content-block" id="cb3"
-			data-0="opacity:0.1;"
-			data-250="opacity:0.1"
-			data-700="opacity:1;">
-				<h2>How Does it Work?</h2>
-				<p>Launch solar panels into orbit aboard energy transmitting satellites. Collect high intensity, uninterrupted solar radiation. Giant mirrors reflect huge amounts of solar radiation onto smaller solar collectors. This radiation is then wirelessly beamed to earth in a safe and controlled was as either a microwave or laser beam.</p>
-		</div>
-		<!-- First Satellite -->
-		<!-- <div id="sat-and-beam">
-			<div id="sat-test"></div>
-			<div id="sat-beam"></div>
-		</div> -->
+		
+		
 	</div>
 	<script type="text/javascript" src="skrollr.min.js"></script>
 
