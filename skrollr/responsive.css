@@ -1,0 +1,125 @@
+
+@media (max-width:960px){}
+
+@media (max-width:790px){
+
+	#sun img{
+		margin-top: -70% !important;
+	}
+
+
+
+	#cb1 {top:300px !important; left:14% !important}
+	#cb2 {top:325px !important; left: -14% !important}
+	#cb3 {top:350px !important; left: 14% !important}
+
+}
+
+@media (max-width:700px){
+	
+	#top-box1 {
+		height: 100px !important;
+	}
+
+	#top-box1 h1 {
+		font-size: 40px !important;
+		padding-top: 30px !important;
+	}
+
+	#top-box2 {
+		top: 100px !important;
+		height: 55px !important;
+	}
+
+	#top-box2 h2{
+		font-size: 18px !important;
+		padding-top: 18px !important;
+		letter-spacing: 0px !important;
+	}
+}
+
+@media (max-width:570px){
+	/*#container {
+		height: 320px;	
+	}*/
+	#sun img{
+		margin-top: -50% !important;
+	}
+	
+	#top-box1 {
+		height: 80px !important;
+	}
+
+	#top-box1 h1 {
+		font-size: 30px !important;
+		padding-top: 25px !important;
+	}
+
+	#top-box2 {
+		top: 80px !important;
+	}
+
+	#top-box2 h2{
+		font-size: 18px !important;
+		padding-top: 18px !important;
+		letter-spacing: 0px !important;
+	}
+	#top-box2 h2{
+		font-size: 18px !important;
+		padding-top: 8px !important;
+		letter-spacing: 0px !important;
+	}
+
+/*manipulate ufo parts*/
+
+ #ufo	{
+ 	left: -20px !important;
+ }
+
+ #ufo-beam {
+ 	left: 9px !important;
+ }
+
+
+
+}
+
+@media (max-width:480px){
+/*	#container {
+		height:255px !important;
+	}*/
+	#top-box1 h1 {
+		padding-top: 12px !important;
+	}
+
+	.content-block {
+		height: auto !important;
+	}
+
+	.content-block p {
+		margin-left: 10px !important;
+		margin-right: 10px !important;
+	}
+/*first content blocks*/
+	#cb1 {left:	0 !important; top: 500px !important;}
+	#cb2 {left:	0 !important; top:525px !important;}
+	#cb3 {left:	0 !important; top: 550px !important;}
+
+/*UFos!*/
+	#ufo	{top: -100px !important; left: 20px !important}
+
+	#ufo-beam {top: -18px !important; left: 50px !important }
+
+
+	
+}
+
+
+@media (max-width:339px) {
+	}
+
+@media (max-width:320px){
+}
+
+
+

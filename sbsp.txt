@@ -1,0 +1,43 @@
+Space-Based Solar Power
+ - Proposed at beginning of the space age.
+
+
+Why Solar?
+ - Limited fossil fuel?
+ - No greenhouse gas emmitted
+ - "Solar energy is plentiful, clean, and for all practical purposes provides a limitless source of power." - LLNL
+
+Why Space Based? / Why not ground?
+ - Not always sunny (clouds + night)
+ - Low energy density on ground?
+ - Remote bases and villages could get power without much ground x
+
+Laser:
+ - 1 MW of Power per satellite
+ - Low Earth Ordbit
+ - 3600 m2 or > half football field for collector, focused into 12m2
+pro
+ - 1000 fold reduced overall size requirements
+
+
+Microwave:
+pro
+ - Good transmition in cloud cover
+ - transmitted through air at intensity no greater than midday sun.
+
+cons
+ - Huge sie of microwave Rectenna on earth
+
+Going Forward: 
+ - launch/flight costs will go down (multiple launches to a single launch)
+ - no need for human participation
+ - 3D printers?
+ - limited amount of oil in ground
+
+Barriers:
+ - billions $$ --- R&D, flight costs
+ - Lasers in space is illegal
+ - lasers through the air is dangerous (but only 2 meters in diameter)
+ - microwave rectenna's are 2km in diameter
+
+3D printers in space: http://www.greentechmedia.com/articles/read/Can-3D-Printing-Turn-Space-Based-Solar-into-a-Reality
