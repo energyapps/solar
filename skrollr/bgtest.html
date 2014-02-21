@@ -373,7 +373,6 @@
 			position: relative;
 			width: 45%;
 			float: left;
-			
 			text-align: center;
 		}			
 
@@ -381,15 +380,13 @@
 			position: relative;
 			width: 45%;
 			float: left;
-			
 			text-align: center;
 			
 		}
 
-		#center-tab {
+		#middle-tab {
 			position: relative;
 			width: 10%;
-			
 			text-align: center;
 			float: left;
 		}
@@ -402,6 +399,7 @@
 			background-color: blue;
 			float: left;
 			left: -50%;
+			opacity: 0.5;
 		}
 
 		#mini-microwave {
@@ -412,6 +410,46 @@
 			background-color: blue;
 			float: left;
 			right: -50%;
+			opacity: 0.5;
+		}
+
+		.pro-con-title {
+				position: relative;
+				width: 100%;
+				font-family: 'Dosis', sans-serif;				
+				font-size: 35px;
+				line-height: 75px;
+				color: #f15a24;
+				text-shadow: -2px 3px #333;
+			}
+
+
+		#middle-pro	{
+			width: 10%;
+			position: relative;
+			float: left;
+			top: 100px;
+			text-align: center;
+		}
+
+		#left-pro {
+			position: relative;
+			background-color: gray;
+			width: 45%;
+			text-align: center;
+			height: 400px;
+			float: left;
+			top: 100px;
+		}
+
+		#right-pro {
+			position: relative;
+			background-color: gray;
+			width: 45%;
+			text-align: center;
+			height: 400px;
+			float: left;
+			top: 100px;
 		}
 		</style>
 
@@ -419,7 +457,7 @@
 			<div class="half-tab" id="left-tab">
 				<div class="floating-header"><h3><span>{</span>Laser Solar Satellites<span>}</span></h3></div>
 			</div>
-			<div class="half-tab" id="center-tab">
+			<div class="half-tab" id="middle-tab">
 				<div class="floating-header"><h3><span></span>VS<span></span></h3></div>
 			</div>
 			<div class="half-tab" id="right-tab">
@@ -433,6 +471,25 @@
 				data-2500="right: -50%;"
 				data-2800="right: 0;"
 			></div>
+
+			<div id="left-pro"
+				data-2700="top:1000px; opacity: 0;"
+				data-3200="top:100px; opacity:1"
+			></div>
+			<div id="middle-pro"
+				data-2700="top: -2000px; opacity: 0;"
+				data-3200="top:100px; opacity:1"
+			>
+				<div class="pro-con-title">P</div>
+				<div class="pro-con-title">R</div>
+				<div class="pro-con-title">O</div>
+				<div class="pro-con-title">S</div>
+			</div>
+			<div id="right-pro"
+				data-2700="top:1000px; opacity: 0;"
+				data-3200="top:100px; opacity:1"
+			></div>
+
 		</div>
 
 
