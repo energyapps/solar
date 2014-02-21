@@ -168,7 +168,6 @@
 				width: 100%;
 				/*background-color: rgba(0,0,0,0.4);*/
 				top: 1270px;
-				font-family: 'Dosis', sans-serif;				
 			}
 
 			#satellite-1-header {
@@ -177,6 +176,7 @@
 			}
 
 			.floating-header h3 {
+				font-family: 'Dosis', sans-serif;				
 				text-transform: uppercase;
 				font-size: 25px;
 				line-height: auto;
@@ -189,6 +189,20 @@
 				margin-top: -10px;
 				font-weight: 200;
 				vertical-align: -10%;
+			}
+
+/*Earth!*/
+
+			#earth {
+				position:absolute;
+				bottom:0px;
+				z-index: 60;
+				margin: 0 auto;
+			}
+
+			#earth img {
+				width: 105%;
+
 			}
 </style>
 </head>
@@ -253,8 +267,7 @@
 				top: 50px;
 				right: 0;
 				width: 85%;
-				height: 803px;
-				/*background-color: orange;*/
+				background-color: orange;
 				/*background-image:url('../images/final_images/beam.png');
 				background-repeat:no-repeat;
 				background-position:center;
@@ -266,7 +279,7 @@
 				position: absolute;
 				top: 0px;
 				left: 0px;
-				/*background-color: blue;*/
+				background-color: blue;
 				opacity: 0.5;
 			}
 			#sat-test img {
@@ -280,7 +293,7 @@
 				left: 200px;
 				height: 100%;
 				width: 600px;
-				/*background-color: pink;*/
+				background-color: pink;
 				opacity: 0.5;
 			}
 
@@ -303,6 +316,8 @@
 				font-weight: 200;
 				font-size: 17px;
 			}
+
+
 		</style>
 
 <!-- First Satellite -->
@@ -318,9 +333,112 @@
 				</div>
 				<div id="sat-beam"></div>
 			</div>
-
 		</div>
 		
+		<style type="text/css">
+			#distance-block {
+				position: absolute;
+				width: 100%;
+				height: 300px;
+				top: 1850px;
+				background-color: blue;
+				z-index: 60;
+				opacity: .5;
+			}	
+			#satellite-2-container {
+				position: absolute;
+				width: 100%;
+				height: 600px;
+				top: 2250px;
+				background-color: blue;
+				z-index: 60;
+				opacity: .5;
+			}	
+		</style>
+
+		<div id="distance-block"></div>
+		<div id="satellite-2-container"></div>
+
+		<style type="text/css">
+		#pros-cons-container {
+			position: absolute;
+			width: 100%;
+			height: 1000px;
+			top: 3000px;
+			z-index: 60;
+			
+		}	
+
+		#left-tab {
+			position: relative;
+			width: 45%;
+			float: left;
+			
+			text-align: center;
+		}			
+
+		#right-tab {
+			position: relative;
+			width: 45%;
+			float: left;
+			
+			text-align: center;
+			
+		}
+
+		#center-tab {
+			position: relative;
+			width: 10%;
+			
+			text-align: center;
+			float: left;
+		}
+
+		#mini-laser {
+			width: 50%;
+			position: relative;
+			top: 100px;
+			height: 300px;
+			background-color: blue;
+			float: left;
+			left: -50%;
+		}
+
+		#mini-microwave {
+			width: 50%;
+			position: relative;
+			top: 100px;
+			height: 300px;
+			background-color: blue;
+			float: left;
+			right: -50%;
+		}
+		</style>
+
+		<div id="pros-cons-container">
+			<div class="half-tab" id="left-tab">
+				<div class="floating-header"><h3><span>{</span>Laser Solar Satellites<span>}</span></h3></div>
+			</div>
+			<div class="half-tab" id="center-tab">
+				<div class="floating-header"><h3><span></span>VS<span></span></h3></div>
+			</div>
+			<div class="half-tab" id="right-tab">
+				<div class="floating-header"><h3><span>{</span>Microwave Solar Satellites<span>}</span></h3></div>
+			</div>
+			<div id="mini-laser"
+				data-2500="left: -50%;"
+				data-2800="left: 0;"
+			></div>
+			<div id="mini-microwave"
+				data-2500="right: -50%;"
+				data-2800="right: 0;"
+			></div>
+		</div>
+
+
+		<div id="earth">
+			<img src="../images/final_images/earth.png">
+		</div>
 		
 	</div>
 	<script type="text/javascript" src="skrollr.min.js"></script>
