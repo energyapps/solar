@@ -391,26 +391,44 @@
 			float: left;
 		}
 
+
+
 		#mini-laser {
 			width: 50%;
 			position: relative;
-			top: 100px;
+			top: 30px;
 			height: 300px;
-			background-color: blue;
 			float: left;
 			left: -50%;
 			opacity: 0.5;
 		}
 
+		#mini-laser img {
+			height: 100%;
+			width: auto;
+		}
+
 		#mini-microwave {
 			width: 50%;
 			position: relative;
-			top: 100px;
+			top: 30px;
 			height: 300px;
-			background-color: blue;
 			float: left;
 			right: -50%;
 			opacity: 0.5;
+		}
+
+		.image-inner {
+			position: absolute;
+			margin: 0 auto;
+			height: 300px;
+			width: 300px;
+			float: right;
+		}
+
+		#mini-microwave-inner img {
+			width: auto;
+			height: 100%;
 		}
 
 		.pro-con-title {
@@ -418,13 +436,13 @@
 				width: 100%;
 				font-family: 'Dosis', sans-serif;				
 				font-size: 35px;
-				line-height: 75px;
+				line-height: 55px;
 				color: #f15a24;
 				text-shadow: -2px 3px #333;
 			}
 
 
-		#middle-pro	{
+		.middle-pro	{
 			width: 10%;
 			position: relative;
 			float: left;
@@ -432,24 +450,26 @@
 			text-align: center;
 		}
 
-		#left-pro {
+		.left-pro {
 			position: relative;
-			background-color: gray;
 			width: 45%;
 			text-align: center;
-			height: 400px;
+			min-height: 200px;
+			
 			float: left;
 			top: 100px;
+
 		}
 
-		#right-pro {
+		.right-pro {
 			position: relative;
-			background-color: gray;
 			width: 45%;
 			text-align: center;
-			height: 400px;
+			min-height: 200px;
+			
 			float: left;
 			top: 100px;
+			
 		}
 		</style>
 
@@ -463,32 +483,103 @@
 			<div class="half-tab" id="right-tab">
 				<div class="floating-header"><h3><span>{</span>Microwave Solar Satellites<span>}</span></h3></div>
 			</div>
-			<div id="mini-laser"
+			<div id="mini-laser" class="planet"
 				data-2500="left: -50%;"
 				data-2800="left: 0;"
-			></div>
-			<div id="mini-microwave"
+			>
+				<div class="image-inner">
+					<img src="../images/final_images/laser.png">
+				</div>
+			</div>
+			<div id="mini-microwave" class="planet"
 				data-2500="right: -50%;"
 				data-2800="right: 0;"
-			></div>
-
-			<div id="left-pro"
-				data-2700="top:1000px; opacity: 0;"
-				data-3200="top:100px; opacity:1"
-			></div>
-			<div id="middle-pro"
-				data-2700="top: -2000px; opacity: 0;"
-				data-3200="top:100px; opacity:1"
 			>
-				<div class="pro-con-title">P</div>
-				<div class="pro-con-title">R</div>
-				<div class="pro-con-title">O</div>
-				<div class="pro-con-title">S</div>
+				<img src="../images/final_images/microwave.png">
 			</div>
-			<div id="right-pro"
-				data-2700="top:1000px; opacity: 0;"
-				data-3200="top:100px; opacity:1"
-			></div>
+
+			<style type="text/css">
+				.procontext {
+					color: #ffffff;
+					font-size: 16px;
+					line-height: 20px;
+				}
+
+				.procontext p {
+					padding-top: 25px;
+				}
+
+				.right-text-container {width: 75%; float: left;}
+				.left-text-container  {width: 75%; float: right;}
+
+				#proconspacer {width:100%;   clear: both}
+				#proconspacer #insidespacer {width: 75%; border-bottom: 1px solid #f15a24; height: 60px; margin: 0 auto;}
+			</style>
+			<div>
+				<div class="left-pro procontext" 
+					data-2500="top:1000px; opacity: 0;"
+					data-2900="top:30px; opacity:1"
+				>
+					<div class="left-text-container">
+						<p>Relatively low startup costs in the $500 million to $1 billion range.</p>
+						<p>Single Launch per satellite would be self assembling, lowering costs and risks substantially.</p>
+						<p>The small diameter of the laser beam would make it simpler to implement on the ground.</p>
+					</div>
+				</div>
+				<div class="middle-pro"
+					data-2500="top: -2000px; opacity: 0;"
+					data-2900="top:30px; opacity:1"
+				>
+					<div class="pro-con-title">P</div>
+					<div class="pro-con-title">R</div>
+					<div class="pro-con-title">O</div>
+					<div class="pro-con-title">S</div>
+				</div>
+				<div class="right-pro procontext"
+					data-2500="top:1000px; opacity: 0;"
+					data-2900="top:30px; opacity:1"
+				>
+					<div class="right-text-container">
+						<p>Steady transmission of power through fain and clouds.</p>
+						<p>Safely transmit power through air at intensity no greater than midday sun.</p>
+						<p>Provide upwards of 1 GB of energy to terrestrial reciever, enough to power a city.</p>
+					</div>
+				</div>
+			</div>
+			<div id="proconspacer">
+				<div id="insidespacer"></div>
+			</div>
+			<div style="clear:both;">
+				<div class="left-pro procontext"
+					data-2900="top:1000px; opacity: 0;"
+					data-3100="top:30px; opacity:1"
+				>
+					<div class="left-text-container" >
+						<p>Comparatively low power of each individual satellite, in the area of 1 to 10 MW per satellite, would require several satellite to make a substantial impact.</p>
+						<p>There are several safety concerns with lasers in space, such as blinding and weaponization.</p>
+						<p>Would have trouble transmitting power through heavy clouds.</p>
+					</div>
+				</div>
+				<div class="middle-pro"
+					data-2900="top: -2000px; opacity: 0;"
+					data-3100="top:30px; opacity:1"
+				>
+					<div class="pro-con-title">C</div>
+					<div class="pro-con-title">O</div>
+					<div class="pro-con-title">N</div>
+					<div class="pro-con-title">S</div>
+				</div>
+				<div class="right-pro procontext" 
+					data-2900="top:1000px; opacity: 0;"
+					data-3100="top:30px; opacity:1"
+				>
+					<div class="right-text-container">
+						<p>Production cost in the tons of billions of dollars range.</p>
+						<p>The terrestrial receiver would be several kilometers in diameter.</p>
+						<p>The distance of the satellite from earth would make it nearly impossible to repair.</p>
+					</div>
+				</div>
+			</div>
 
 		</div>
 
