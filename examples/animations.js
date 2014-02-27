@@ -126,7 +126,7 @@ $(document).ready(function cloudArrowsAnimation() {
 // SUN ANIMATION
 $(document).ready(function sunAnimation() {
     $("#sun").
-      animate({rotate:'+=36000deg'},900000, sunAnimation);
+      animate({rotate:'+=360deg'},10000, sunAnimation);
 });
 
 // UFO ANIMATION
