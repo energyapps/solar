@@ -149,8 +149,9 @@ function ufoReAppear(){
 
 // SUN ANIMATION
 $(document).ready(function microwaveRock() {
-    $("#sat").
-      animate({rotate:'+=360deg'},10000, microwaveRock);
+    $("#sat img").
+      animate({rotate:'+=15deg'},5000).
+      animate({rotate:'-=15deg'},5000, microwaveRock);
 });
 
 
