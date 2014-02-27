@@ -117,13 +117,11 @@
 			top: 30px;
 			height: 300px;
 			float: left;
-			left: -50%;
-			opacity: 0.5;
+			left: -50%;			
 		}
 
-		#mini-laser img {
+		#mini-laser-inner img {
 			height: 100%;
-			width: auto;
 		}
 
 		#mini-microwave {
@@ -133,20 +131,27 @@
 			height: 300px;
 			float: left;
 			right: -50%;
-			opacity: 0.5;
+			/*background-color: rgba(4,4,4,0.3)*/
 		}
 
-		.image-inner {
-			position: absolute;
+		#mini-laser-inner {
+			position: relative;
+			margin: 0 auto;
+			height: 300px;
+			width: 100px;
+			/*background-color: rgba(4,4,4,0.3)	*/
+		}
+
+		#mini-microwave-inner {
+			position: relative;
 			margin: 0 auto;
 			height: 300px;
 			width: 300px;
-			float: right;
+			/*background-color: rgba(4,4,4,0.3)	*/
 		}
 
 		#mini-microwave-inner img {
-			width: auto;
-			height: 100%;
+			width: 100%;		
 		}
 
 		.pro-con-title {
@@ -222,18 +227,21 @@
 
 
 
-						.procontext {
-					color: #ffffff;
-					font-size: 16px;
-					line-height: 20px;
-				}
+		.procontext {
+			color: #ffffff;
+			font-size: 16px;
+			line-height: 20px;
+		}
 
-				.procontext p {
-					padding-top: 25px;
-				}
+		.procontext p {
+			padding-top: 25px;
+		}
 
-				.right-text-container {width: 75%; float: left;}
-				.left-text-container  {width: 75%; float: right;}
+		.right-text-container {width: 75%; float: left;}
+		.left-text-container  {width: 75%; float: right;}
 
-				#proconspacer {width:100%;   clear: both}
-				#proconspacer #insidespacer {width: 75%; border-bottom: 1px solid #f15a24; height: 60px; margin: 0 auto;}
+		#proconspacer {width:100%;   clear: both}
+		#proconspacer #insidespacer {
+			width: 75%; 
+			border-bottom: 1px solid #f15a24; 
+			height: 60px; margin: 0 auto;}
