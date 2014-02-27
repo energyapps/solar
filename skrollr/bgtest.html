@@ -205,7 +205,6 @@
 
 			}
 </style>
-<link rel="stylesheet" type="text/css" href="content.css">
 </head>
 
 <body>
@@ -261,6 +260,63 @@
 
 		<style type="text/css">
 
+			/*Satellite*/
+			#sat-and-beam {
+				z-index: 59;
+				position: absolute;
+				top: 50px;
+				right: 0;
+				width: 85%;
+				background-color: orange;
+				/*background-image:url('../images/final_images/beam.png');
+				background-repeat:no-repeat;
+				background-position:center;
+				background-size: 111px 203px;	*/
+			}
+
+			#sat-test {
+				z-index: 60;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				background-color: blue;
+				opacity: 0.5;
+			}
+			#sat-test img {
+				width: 100%;
+			}
+
+			#sat-beam {
+				z-index: 60;
+				position: absolute;
+				top: 0px;
+				left: 200px;
+				height: 100%;
+				width: 600px;
+				background-color: pink;
+				opacity: 0.5;
+			}
+
+			#floating-context-1 {
+				top: 100px;
+				left: 8%;
+			}
+
+			#floating-context-2 {
+				top: 450px;
+				left: 50%;
+				margin-left: -50px;
+			}
+
+			.floating-text {
+				position: absolute;			
+				color: #ffffff;
+				width: 100px;
+				text-align: center;
+				font-weight: 200;
+				font-size: 17px;
+			}
+
 
 		</style>
 
@@ -280,14 +336,141 @@
 		</div>
 		
 		<style type="text/css">
-
+			#distance-block {
+				position: absolute;
+				width: 100%;
+				height: 300px;
+				top: 1850px;
+				background-color: blue;
+				z-index: 60;
+				opacity: .5;
+			}	
+			#satellite-2-container {
+				position: absolute;
+				width: 100%;
+				height: 600px;
+				top: 2250px;
+				background-color: blue;
+				z-index: 60;
+				opacity: .5;
+			}	
 		</style>
 
 		<div id="distance-block"></div>
 		<div id="satellite-2-container"></div>
 
 		<style type="text/css">
-	
+		#pros-cons-container {
+			position: absolute;
+			width: 100%;
+			height: 1000px;
+			top: 3000px;
+			z-index: 60;
+			
+		}	
+
+		#left-tab {
+			position: relative;
+			width: 45%;
+			float: left;
+			text-align: center;
+		}			
+
+		#right-tab {
+			position: relative;
+			width: 45%;
+			float: left;
+			text-align: center;
+			
+		}
+
+		#middle-tab {
+			position: relative;
+			width: 10%;
+			text-align: center;
+			float: left;
+		}
+
+
+
+		#mini-laser {
+			width: 50%;
+			position: relative;
+			top: 30px;
+			height: 300px;
+			float: left;
+			left: -50%;
+			opacity: 0.5;
+		}
+
+		#mini-laser img {
+			height: 100%;
+			width: auto;
+		}
+
+		#mini-microwave {
+			width: 50%;
+			position: relative;
+			top: 30px;
+			height: 300px;
+			float: left;
+			right: -50%;
+			opacity: 0.5;
+		}
+
+		.image-inner {
+			position: absolute;
+			margin: 0 auto;
+			height: 300px;
+			width: 300px;
+			float: right;
+		}
+
+		#mini-microwave-inner img {
+			width: auto;
+			height: 100%;
+		}
+
+		.pro-con-title {
+				position: relative;
+				width: 100%;
+				font-family: 'Dosis', sans-serif;				
+				font-size: 35px;
+				line-height: 55px;
+				color: #f15a24;
+				text-shadow: -2px 3px #333;
+			}
+
+
+		.middle-pro	{
+			width: 10%;
+			position: relative;
+			float: left;
+			top: 100px;
+			text-align: center;
+		}
+
+		.left-pro {
+			position: relative;
+			width: 45%;
+			text-align: center;
+			min-height: 200px;
+			
+			float: left;
+			top: 100px;
+
+		}
+
+		.right-pro {
+			position: relative;
+			width: 45%;
+			text-align: center;
+			min-height: 200px;
+			
+			float: left;
+			top: 100px;
+			
+		}
 		</style>
 
 		<div id="pros-cons-container">
@@ -316,7 +499,21 @@
 			</div>
 
 			<style type="text/css">
+				.procontext {
+					color: #ffffff;
+					font-size: 16px;
+					line-height: 20px;
+				}
 
+				.procontext p {
+					padding-top: 25px;
+				}
+
+				.right-text-container {width: 75%; float: left;}
+				.left-text-container  {width: 75%; float: right;}
+
+				#proconspacer {width:100%;   clear: both}
+				#proconspacer #insidespacer {width: 75%; border-bottom: 1px solid #f15a24; height: 60px; margin: 0 auto;}
 			</style>
 			<div>
 				<div class="left-pro procontext" 
@@ -383,6 +580,7 @@
 					</div>
 				</div>
 			</div>
+
 		</div>
 
 
