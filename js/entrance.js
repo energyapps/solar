@@ -6,6 +6,7 @@ var ufo_index = 0;
 //// ONLOAD ENTRANCES   ////
 $(document).ready(function (){                
     ufoEntrance();
+    // microwaveRock();
 });	
 
 //// SCROLL ANIMATIONS  ////
@@ -130,8 +131,27 @@ function ufoReAppear(){
 // };
 
 
+// //////////////////////
+// UFO stuff//
+// /////////////////////
+// function microwaveRock() {
+//     $("#sat").
+//       delay(100).
+//       animate({rotate:'+=1deg'},500).
+//       animate({rotate:'-=1deg'},500).
+//       animate({rotate:'+=1deg'},500).
+//       animate({rotate:'-=1deg'},500).
+//       animate({rotate:'+=1deg'},500).
+//       animate({rotate:'-=1deg'},500).
+//       animate({rotate:'+=1deg'},500).
+//       animate({rotate:'-=1deg'},500);
+// };    
 
-
+// SUN ANIMATION
+$(document).ready(function microwaveRock() {
+    $("#sat").
+      animate({rotate:'+=360deg'},10000, microwaveRock);
+});
 
 
 

@@ -5,24 +5,22 @@
 				position: absolute;
 				top: 50px;
 				right: 0;
-				width: 85%;
-				background-color: orange;
-				/*background-image:url('../images/final_images/beam.png');
-				background-repeat:no-repeat;
-				background-position:center;
-				background-size: 111px 203px;	*/
+				width: 100%;
+				height: 100px;
+				/*background-color: rgba(4,4,4,0.5);*/
 			}
 
-			#sat-test {
+			#sat {
 				z-index: 60;
-				position: absolute;
 				top: 0px;
 				left: 0px;
-				background-color: blue;
-				opacity: 0.5;
+				/*background-color: rgba(40,4,4,0.5);*/
+				width: 50%;
+				margin: 0px auto;
 			}
-			#sat-test img {
+			#sat img {
 				width: 100%;
+				margin-top: -70px; 
 			}
 
 			#sat-beam {
@@ -37,20 +35,20 @@
 			}
 
 			#floating-context-1 {
-				top: 100px;
-				left: 8%;
+				left: -40%;
+				/*margin-left: -45%*/
 			}
 
 			#floating-context-2 {
-				top: 450px;
 				left: 50%;
 				margin-left: -50px;
+				margin-top: 50px;
 			}
 
 			.floating-text {
-				position: absolute;			
+				position: relative;
 				color: #ffffff;
-				width: 100px;
+				width: 150px;
 				text-align: center;
 				font-weight: 200;
 				font-size: 17px;
@@ -146,12 +144,12 @@
 			position: relative;
 			margin: 0 auto;
 			height: 300px;
-			width: 300px;
+			width: 390px;
 			/*background-color: rgba(4,4,4,0.3)	*/
 		}
 
 		#mini-microwave-inner img {
-			width: 100%;		
+			height: 100%;		
 		}
 
 		.pro-con-title {
