@@ -20,7 +20,7 @@
 			}
 			#sat img {
 				width: 100%;
-				margin-top: -70px; 
+				margin-top: -60px; 
 			}
 
 			#sat-beam {
@@ -34,24 +34,87 @@
 				opacity: 0.5;
 			}
 
+			#text-and-arrow1 {
+				left: 05%;
+				position: absolute;
+				width: 35%;
+				/*background-color: red;*/
+			}
+
+			#arrow1 {
+				border-bottom: 1px dashed white; 
+				width: 58%;
+				height: 15px;
+				float: left;
+				/*background-color: pink;*/
+				top: 0px;
+			}
+			#arrow2 {
+				border-left: 1px dashed white; 
+				width: 1%;
+				margin-top: 15px;
+				height: 25px;
+				float: left;
+				/*background-color: pink;*/
+				top: 0px;
+				color: #fff;
+				font-size: 9px;
+				line-height: 56px;
+			}
+
+			#arrow2 span {margin-left: -3px;}
+
+			#text-and-arrow2 {
+				left: 50%;				
+				position: relative;
+				margin-left:-50px;
+			}
+
+			#arrow3 {
+				border-top: 1px dashed white; 
+				height: 1px;
+				margin-top: -60px;
+				float: left;
+				width: 30px;
+				color: #ffffff;
+				font-size: 9px;
+				/*line-height: -10px;*/
+			}
+
+			#arrow3 div {
+				margin-left: 30px;
+				top: -5px;
+				position: relative;
+			}
+
+			#arrow4 {
+				border-left: 1px dashed white; 
+				height: 100px;
+				float: left;
+				/*background-color: pink;*/
+				margin-top: -60px;
+				clear: both;
+			
+			}
+
 			#floating-context-1 {
-				left: -40%;
+				
 				/*margin-left: -45%*/
 			}
 
 			#floating-context-2 {
-				left: 50%;
-				margin-left: -50px;
+			margin-left:-50px;	
 				margin-top: 50px;
 			}
 
 			.floating-text {
-				position: relative;
 				color: #ffffff;
-				width: 150px;
+				width: 40%;
 				text-align: center;
 				font-weight: 200;
 				font-size: 17px;
+				/*background-color: orange;*/
+				float: left;
 			}
 
 

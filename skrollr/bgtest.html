@@ -276,9 +276,17 @@
 		
 			<div id="sat-and-beam">
 				<div id="sat">
-					<div class="floating-text" id="floating-context-1">The length of the satellite would be 3km.</div>
+					<div id="text-and-arrow1">
+						<div class="floating-text" id="floating-context-1">The length of the satellite would be 3km.</div>
+						<div id="arrow1"></div>
+						<div id="arrow2"><span>v</span></div>
+					</div>					
 					<img src="../images/final_images/microwave.png">
-					<div class="floating-text" id="floating-context-2">The length of the microwave-transmitting antenna would be as much as 1 km.</div>
+					<div id="text-and-arrow2">
+						<div id="arrow3"><div>></div></div>
+						<div id="arrow4"></div>
+						<div class="floating-text" id="floating-context-2">The length of the microwave-transmitting antenna would be as much as 1 km.</div>
+					</div>
 				</div>
 				<!-- <div id="sat-beam"></div> -->
 			</div>
@@ -423,8 +431,8 @@
 
 // Spin the globes, yo
 $(document).ready(function sunAnimation() {
-    // $("#sun").
-    //   animate({rotate:'+=1deg'},1000000, sunAnimation);
+    $("#sun img").
+      animate({rotate:'+=360deg'},100000, sunAnimation);
 	// $("#earth").
  //      animate({rotate:'+=36000deg'},300000);      
     // $(".planet2").
