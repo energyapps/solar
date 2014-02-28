@@ -1,5 +1,5 @@
 
-			/*Satellite*/
+			/*Microwve Satellite*/
 			#sat-and-beam {
 				z-index: 59;
 				position: absolute;
@@ -117,16 +117,199 @@
 				float: left;
 			}
 
+/*DISTANCE FOR MICROWAVE*/
 
 			#distance-block {
 				position: absolute;
 				width: 100%;
-				height: 300px;
+				/*height: 300px;*/
 				top: 1850px;
-				background-color: blue;
 				z-index: 60;
-				opacity: .5;
+				margin: 0 auto;
 			}	
+
+			#distance-block-inner {
+				position: relative;
+				width: 94%;
+				height: 100%;
+				margin: 0 auto;
+				background-color: rgba(0,0,0,0.5);	
+			}
+
+			#distance-text {
+				text-align: center;
+				padding-top: 15px;
+				padding-left: 140px;
+				padding-right: 140px;
+				padding-bottom: 20px;
+				line-height: 36px;		
+				margin: 0 auto;		
+			}
+
+			#distance-graphics {
+				width: 92%;
+				margin: 0 auto;
+			}
+
+			#distance-legend {
+				width: 100%;
+				font-family: 'Dosis', sans-serif;
+				height: 30px;				
+			}
+
+			.distance-tick {				
+				width: 1%;
+				height: 10px;
+				position: relative;
+			}
+
+			#distance-tick1 {
+				border-right: 1px solid white;
+				float: left;
+				top: 1px;
+			}
+
+			#distance-tick2 {
+				border-left: 1px solid white;
+				float: right;
+				top: -1px;
+				right: -1px;
+			}
+
+			#distance-legend-dashed {
+				border-bottom: 1px dashed white;
+				width: 98%;
+				height: 1px;
+				position: relative;
+				float: left;
+				top: 5px;
+			}
+
+			#distance-legend-text {
+				background-color: #414A4C;
+				color: #fff;
+				margin: 0 auto;
+				width: 90px;
+				line-height: 25px;
+				text-align: center;
+				font-size: 16px;
+				top: -11px;
+				position: relative;
+				letter-spacing: 1px;
+			}
+
+			#distance-bodies-container {
+				width: 100%;
+				height: 130px;
+			}
+
+			#distance-legend-earth {
+				left: -3px;
+				position: relative;
+				float: left;
+				width: 26px;
+				height: 26px;
+				background-image:url('../images/final_images/earth_tiny.png');
+				background-repeat:no-repeat;
+				background-position:center;
+				background-size: 26px 26px;
+			}
+
+			#distance-legend-earth-arrow {
+				top: 35px;
+				left: -15px;
+				position: relative;
+				width: 15px;
+				height: 52px;
+				background-image:url('../images/final_images/arrows/blue.png');
+				background-repeat:no-repeat;
+				background-position:center;
+				background-size: 15px 52px;
+			}
+
+			#distance-legend-moon-arrow {
+				top: 15px;
+				left: 10px;
+				position: relative;
+				width: 16px;
+				height: 52px;
+				background-image:url('../images/final_images/arrows/yellow.png');
+				background-repeat:no-repeat;
+				background-position:center;
+				background-size: 16px 52px;	
+			}
+
+			#distance-legend-microwave-arrow1 {
+				top: 0px;
+				left: 35px;
+				position: relative;
+				width: 79px;
+				height: 21px;
+				background-image:url('../images/final_images/arrows/orange1.png');
+				background-repeat:no-repeat;
+				background-position:center;
+				background-size: 79px 21px;	
+			}
+
+			#distance-legend-microwave-arrow2 {
+				top: 0px;
+				left: 130px;
+				position: relative;
+				width: 94px;
+				height: 23px;
+				background-image:url('../images/final_images/arrows/orange2.png');
+				background-repeat:no-repeat;
+				background-position:center;
+				background-size:94px 23px;	
+			}
+
+
+			#distance-legend-microwave-text1 {
+				position: relative;
+				left: 30px;
+				top: 30px;
+				color: #fff;
+				text-align: center;
+				width: 110px;
+			}
+
+			#distance-legend-microwave-text2 {
+				position: relative;
+				left: 35px;
+				top: -15px;
+				color: #fff;
+				text-align: center;
+				width: 300px;
+			}
+
+			#distance-legend-moon {
+				top: 5px;
+				left: -5px;
+				position: relative;
+				float: right;
+				width: 8px;
+				height: 9px;
+				background-image:url('../images/final_images/moon_tiny.png');
+				background-repeat:no-repeat;
+				background-position:center;
+				background-size: 8px 9px;
+			}
+
+			#distance-legend-microwave {
+				left: 10%;
+				top: 2px;
+				position: relative;
+				float: left;
+				width: 26px;
+				height: 26px;
+				background-image:url('../images/final_images/satellite_tiny.png');
+				background-repeat:no-repeat;
+				background-position:center;
+				background-size: 26px 26px;		
+			}
+
+/*Lasers!*/
+
 			#satellite-2-container {
 				position: absolute;
 				width: 100%;
@@ -139,7 +322,7 @@
 
 
 
-				#pros-cons-container {
+			#pros-cons-container {
 			position: absolute;
 			width: 100%;
 			height: 1000px;
