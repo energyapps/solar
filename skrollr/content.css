@@ -126,6 +126,7 @@
 				top: 1850px;
 				z-index: 60;
 				margin: 0 auto;
+				font-family: 'Dosis', sans-serif;				
 			}	
 
 			#distance-block-inner {
@@ -271,7 +272,11 @@
 				color: #fff;
 				text-align: center;
 				width: 110px;
+				line-height: 110%;
+
 			}
+
+			#distance-legend-microwave-text1 span {				color: #f15a24;}
 
 			#distance-legend-microwave-text2 {
 				position: relative;
@@ -308,6 +313,22 @@
 				background-size: 26px 26px;		
 			}
 
+			#theearthtext {
+				position: relative;
+				left: 5px;
+				top: 30px;
+				width: 100px;
+				color: rgb(0,189,255);
+			}
+
+			#themoontext {
+				position: relative;
+				left: -65px;
+				top: 5px;
+				width: 100px;
+				color: rgb(255,253,164)
+			}
+
 /*Lasers!*/
 
 			#satellite-2-container {
@@ -321,7 +342,7 @@
 			}	
 
 
-
+/*pros cons*/
 			#pros-cons-container {
 			position: absolute;
 			width: 100%;
