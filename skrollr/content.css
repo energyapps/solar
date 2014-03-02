@@ -62,6 +62,16 @@
 				line-height: 56px;
 			}
 
+			#arrow1 span {
+				display: none;
+				left: 5px;
+				top: 11px;
+				position: relative;
+				float: right;
+				color: #fff;
+				font-size: 9px;
+			}
+
 			#arrow2 span {margin-left: -3px;}
 
 			#text-and-arrow2 {
@@ -86,6 +96,9 @@
 				top: -5px;
 				position: relative;
 			}
+
+			#a2, #a3 {display: none;}
+
 
 			#arrow4 {
 				border-left: 1px dashed white; 
@@ -140,8 +153,8 @@
 			#distance-text {
 				text-align: center;
 				padding-top: 15px;
-				padding-left: 140px;
-				padding-right: 140px;
+				padding-left: 20px;
+				padding-right: 20px;
 				padding-bottom: 20px;
 				line-height: 36px;		
 				margin: 0 auto;		
@@ -217,8 +230,8 @@
 			}
 
 			#distance-legend-earth-arrow {
-				top: 35px;
-				left: -15px;
+				top: 29px;
+				left: -11px;
 				position: relative;
 				width: 15px;
 				height: 52px;
@@ -242,7 +255,7 @@
 
 			#distance-legend-microwave-arrow1 {
 				top: 0px;
-				left: 35px;
+				left: 28px;
 				position: relative;
 				width: 79px;
 				height: 21px;
@@ -284,7 +297,7 @@
 				top: -15px;
 				color: #fff;
 				text-align: center;
-				width: 300px;
+				width: 275px;
 			}
 
 			#distance-legend-moon {
@@ -315,8 +328,8 @@
 
 			#theearthtext {
 				position: relative;
-				left: 5px;
-				top: 30px;
+				left: 10px;
+				top: 20px;
 				width: 100px;
 				color: rgb(0,189,255);
 			}
@@ -328,6 +341,7 @@
 				width: 100px;
 				color: rgb(255,253,164)
 			}
+			#s2 {display: none;}
 
 /*Lasers!*/
 

@@ -155,6 +155,13 @@ $(document).ready(function microwaveRock() {
 });
 
 
+// Little planets
+// $(document).ready(function littleEarth() {
+//     $("#distance-legend-earth").
+//       animate({rotate:'+=15deg'},5000).
+//       animate({rotate:'-=15deg'},5000, littleEarth);
+// });
+
 
 
 
