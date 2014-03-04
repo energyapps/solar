@@ -661,7 +661,6 @@
 			width: 45%;
 			text-align: center;
 			min-height: 200px;
-			
 			float: left;
 			
 		}
@@ -713,3 +712,11 @@
 			width: 75%; 
 			border-bottom: 1px solid #f15a24; 
 			height: 60px; margin: 0 auto;}
+
+		#yessir1 {
+
+		}
+
+		#yessir2 {
+			clear: both;
+		}
