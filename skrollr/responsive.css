@@ -5,6 +5,9 @@
 	#sat img {
 		margin-top: -15px;
 	}
+	.right-text-container, .left-text-container {
+		width: 95%;
+	}
 }
 
 @media (max-width:790px){
@@ -37,6 +40,10 @@
 		right: 40px;
 		top: -40px;
 	}
+	/*Move the big blocks*/
+	#satellite-1-container {top: 1340px;}
+	#distance-block {top: 1810px;}
+	#laser-container {top: 2100px;}
 }
 
 @media (max-width:700px){
@@ -264,7 +271,8 @@
 		right:-5px;
 		top: 60px;
 	}
-
+	/*pros and cons*/
+	.right-text-container, .left-text-container {font-size: 14px; line-height: 16px; width: 98%;}
 }
 
 
