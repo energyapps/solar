@@ -173,9 +173,9 @@
 				top: 1270px;
 			}
 
-			#satellite-1-header {
+			.floating-header {
 				position: relative;
-				left: 8%;				
+				left: 8%;	
 			}
 
 			.floating-header h3 {
@@ -314,8 +314,8 @@
 					</div>
 					<div id="distance-bodies-container">
 						<div id="distance-legend-earth">
-							<div id="distance-legend-earth-arrow"></div>
-							<div id="theearthtext">THE EARTH</div>
+							<div class="distance-legend-earth-arrow"></div>
+							<div class="theearthtext">THE EARTH</div>
 						</div>
 						<div id="distance-legend-microwave">
 							<div id="distance-legend-microwave-arrow1">
@@ -344,16 +344,36 @@
 				</div>
 			</div>
 		</div>
+		<style type="text/css">
+	
+		</style>
 
-
-
-
-
-
-
-
-
-		<div id="satellite-2-container"></div>
+		<div id="laser-container">
+			<div id="satellite-2-header" class="floating-header">
+				<h3><span>{&nbsp;&nbsp;</span>Laser Solar Satellite<span>&nbsp;&nbsp;}</span></h3>
+			</div>
+			<div id="laser-content">
+				<div id="laser-left">
+					<div id="laser-left-text">These satellites would operate as a group with othere similar satellites, due to their small size.</div>
+					<div id="laser-left-mini-lasers"></div>
+					<div id="laser-left-large">
+						<img src="../images/final_images/laser.png">
+						<div id="laser-left-beam"></div>
+					</div>
+				</div>
+				<div id="laser-right">
+					<div id="laser-right-title">How far out are the<br> laser satellites</div>
+					<div id="laser-right-legend">
+						<div id="laser-right-earth">
+							<div id="earth-arrow2" class="distance-legend-earth-arrow"></div>
+							<div id="earth-text2" class="theearthtext">THE EARTH</div>
+						</div>
+						<!-- <div id="laser-right-laser-location"></div> -->
+						<div id="laser-right-microwave"></div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<style type="text/css">
 	

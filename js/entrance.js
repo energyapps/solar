@@ -148,11 +148,37 @@ function ufoReAppear(){
 // };    
 
 // SUN ANIMATION
-$(document).ready(function microwaveRock() {
+$(document).ready(
+  function microwaveRock() {
     $("#sat img").
       animate({rotate:'+=15deg'},5000).
       animate({rotate:'-=15deg'},5000, microwaveRock);
-});
+  });
+
+
+$("#ufo-beam").
+    animate({opacity:0},100, 'linear'),
+    $("#ufo-container").
+      delay(900).
+      animate({left:'-=50',top:'+=375'},1200).
+      animate({opacity:1,left:'+=135%'},1800);
+
+
+
+$(document).ready(
+  function laserRock() {
+    $("#laser-left-large img").
+          animate({rotate:'-=15deg'},2500).
+          animate({rotate:'+=15deg'},2500).
+          // animate({rotate:'-=10deg'},1000).
+          delay(5000),
+            $("#laser-left-beam").
+              delay(6000).
+              animate({opacity:1},1000).
+              delay(3000).
+              animate({opacity:0},1000, laserRock);
+  }
+);
 
 
 // Little planets

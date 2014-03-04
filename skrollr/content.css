@@ -157,7 +157,8 @@
 				padding-right: 20px;
 				padding-bottom: 20px;
 				line-height: 36px;		
-				margin: 0 auto;		
+				margin: 0 auto;	
+				left: 0px;	
 			}
 
 			#distance-graphics {
@@ -229,7 +230,7 @@
 				background-size: 26px 26px;
 			}
 
-			#distance-legend-earth-arrow {
+			.distance-legend-earth-arrow {
 				top: 29px;
 				left: -11px;
 				position: relative;
@@ -289,7 +290,7 @@
 
 			}
 
-			#distance-legend-microwave-text1 span {				color: #f15a24;}
+			#distance-legend-microwave-text1 span {color: #f15a24;}
 
 			#distance-legend-microwave-text2 {
 				position: relative;
@@ -326,7 +327,7 @@
 				background-size: 26px 26px;		
 			}
 
-			#theearthtext {
+			.theearthtext {
 				position: relative;
 				left: 10px;
 				top: 20px;
@@ -345,16 +346,123 @@
 
 /*Lasers!*/
 
-			#satellite-2-container {
+			#laser-container {
 				position: absolute;
 				width: 100%;
 				height: 600px;
-				top: 2250px;
-				background-color: blue;
+				top: 2200px;
 				z-index: 60;
-				opacity: .5;
 			}	
 
+			#laser-left {
+				width: 50%;
+				height: 30px;
+				float: left;
+				position: relative;
+			}
+			#laser-right {
+				width: 50%;
+				height: 30px;
+				float: left;
+				position: relative;
+			}
+			#laser-left-text {
+				color: #fff;
+				width: 180px;
+				position: absolute;
+				top: 50px;
+				left: 20%;
+				text-align: center;
+			}
+			#laser-left-mini-lasers {
+				position: absolute;
+				left: 20%;
+				width: 40%;
+				top:150px;
+				height: 100px;
+				background-color: rgba(0,250,0,.4);
+			}
+
+			#laser-left-large {
+				position: relative;
+				float: right;
+				/*background-color: rgba(20,20,100,.4);*/
+				width: 40%;
+			}
+
+			#laser-left-large img {
+				width: 100%;
+				height: auto;
+			}
+
+			#laser-left-beam {
+				opacity: 0;
+				position: absolute;
+				top: 0px;
+				top: 4.5%;
+				left: 85%;
+				width: 100%;
+				height: 100%;
+				/*background-color: rgba(250,0,90,0.4);*/
+				width: 390%;
+				background-image:url('../images/final_images/laser_beam.png');
+				background-repeat:no-repeat;
+				background-position: left top;
+				background-size: 100% auto;		
+			}
+
+			#laser-right-title {
+				color: #fff;
+				text-transform: uppercase;
+				font-family: 'Dosis', sans-serif;				
+				letter-spacing: 1px;
+				font-size: 20px;
+				text-align: center;
+				color: #f15a24;
+				position: relative;
+				float: left;
+				width: 200px;
+				top: 120px;
+				left: -10px;
+			}
+
+			#laser-right-legend {
+				position: relative;
+				float: left;
+				width: 85%;
+				top: 160px;
+				left: 20px;
+			}
+
+			#laser-right-earth {
+				position: relative;
+				float: left;
+				width: 100px;
+				height: 100px;
+				background-image:url('../images/final_images/earth_tiny.png');
+				background-repeat:no-repeat;
+				background-position:center;
+				background-size: 100px 100px;
+
+			}
+			#laser-right-microwave {
+				position: relative;
+				float: right;
+				width: 26px;
+				height: 26px;
+				top: 37px;
+				background-image:url('../images/final_images/satellite_tiny.png');
+				background-repeat:no-repeat;
+				background-position:center;
+				background-size: 26px 26px;
+			}
+
+			#earth-arrow2 {top: 100px;
+							left: 05px}
+			#earth-text2 {
+				top: 93px;
+				left: 25px;
+			}	
 
 /*pros cons*/
 			#pros-cons-container {

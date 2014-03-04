@@ -169,7 +169,7 @@
 	#ufo-beam {top: -18px ; left: 50px  }
 
 /*first satellite*/
-	#satellite-1-header {left: 0px ; text-align: center;}
+	.floating-header {left: 0px ; text-align: center;}
 	.floating-header h3 span{ display: none; }
 
 	#sat img {
