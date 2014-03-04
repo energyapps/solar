@@ -383,6 +383,21 @@
 				background-color: rgba(0,250,0,.4);
 			}
 
+			.mini-crazy-lazers {
+				position: absolute;
+				float: left;
+				width: 42px;
+				height: 78px;
+				background-image:url('../images/final_images/mini_laser1.png');
+				background-repeat:no-repeat;
+				background-position:center;
+				background-size: 42px 78px;			
+			}
+
+			#l1 {left: 0%}
+			#l2 {left: 39%}
+			#l3 {right: 0%;}
+
 			#laser-left-large {
 				position: relative;
 				float: right;
@@ -437,12 +452,12 @@
 			#laser-right-earth {
 				position: relative;
 				float: left;
-				width: 100px;
-				height: 100px;
-				background-image:url('../images/final_images/earth_tiny.png');
+				width: 133px;
+				height: 123px;
+				background-image:url('../images/final_images/earth_and_sat.png');
 				background-repeat:no-repeat;
 				background-position:center;
-				background-size: 100px 100px;
+				background-size: 133px 123px;
 
 			}
 			#laser-right-microwave {
@@ -457,12 +472,67 @@
 				background-size: 26px 26px;
 			}
 
-			#earth-arrow2 {top: 100px;
+			#earth-arrow2 {top: 120px;
 							left: 05px}
 			#earth-text2 {
-				top: 93px;
+				top: 113px;
 				left: 25px;
 			}	
+
+			#laser-arrow {
+				position: relative;
+				float: right;
+				top: -52px;
+				left: 95px;
+				width: 89px;
+				height: 16px;
+				background-image:url('../images/final_images/arrows/orange3.png');
+				background-repeat:no-repeat;
+				background-position:center;
+				background-size: 89px 16px;	
+			}
+
+			#laser-text {
+				position: relative;
+				color: #fff;
+				left: 100%;
+				font-family: 'Dosis', sans-serif;				
+				letter-spacing: 1px;
+				font-size: 16px;
+				text-align: center;
+			}
+
+			#laser-text p {
+				color: #f15a24;
+			}
+
+			#laser-right-microwave-arrow {
+				position: relative;
+				float: right;
+				top: 20px;
+				left: -30px;
+				width: 84px;
+				height: 126px;
+				background-image:url('../images/final_images/arrows/white.png');
+				background-repeat:no-repeat;
+				background-position:center;
+				background-size: 84px 126px;					
+			}
+
+			#laser-right-microwave-arrow-text {
+				position: relative;
+				text-transform: uppercase;
+				color: #fff;
+				left: -47px;
+				top: 102%;
+				font-family: 'Dosis', sans-serif;				
+				letter-spacing: 1px;
+				font-size: 16px;
+				text-align: center;	
+				width: 100px;
+			}
+
+
 
 /*pros cons*/
 			#pros-cons-container {
