@@ -19,6 +19,24 @@
 
 	#satellite-1-container {top: 1400px ;}
 
+	/*Lasers!!!*/
+	#laser-left {width: 100%}
+	#laser-right {
+		width: 100%;
+		top: 210px;
+	}
+	#laser-left-large img {
+		width: 60%;
+	}
+	#laser-right-title {
+		float: none;
+		margin: 0 auto;
+		left: auto;
+	}
+	#laser-left-large {
+		right: 40px;
+		top: -40px;
+	}
 }
 
 @media (max-width:700px){
@@ -75,6 +93,10 @@
 	/*Microwave distance*/
 	#distance-legend-microwave-arrow2 {
 		display: none;
+	}
+	#laser-left-large {
+		right: 30px;
+		top: 0px;
 	}
 }
 
@@ -135,7 +157,18 @@
 	#distance-graphics {
 		width: 90%;
 	}
+/*lasers*/
+	
 
+	#laser-left-large img {
+		width: 70%;
+	}
+	#laser-left-text {
+		left: 10%;
+	}
+	#laser-left-mini-lasers {
+		left: 10%;
+	}
 }
 
 @media (max-width:480px){
@@ -226,6 +259,12 @@
 		padding-left: 5px;
 		padding-right: 5px;
 	}
+	/*lasers*/
+	#laser-left-large {
+		right:-5px;
+		top: 60px;
+	}
+
 }
 
 

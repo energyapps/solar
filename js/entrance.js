@@ -167,18 +167,63 @@ $("#ufo-beam").
 
 $(document).ready(
   function laserRock() {
-    $("#laser-left-large img").
+    $("#laser-left-large").
           animate({rotate:'-=15deg'},2500).
+          animate({rotate:'+=5deg'},2500).
+          animate({rotate:'-=15deg'},2500).
+          animate({rotate:'+=5deg'},2500).
+          animate({rotate:'-=15deg'},2500).
+          animate({rotate:'+=5deg'},2500).
           animate({rotate:'+=15deg'},2500).
-          // animate({rotate:'-=10deg'},1000).
-          delay(5000),
-            $("#laser-left-beam").
-              delay(6000).
-              animate({opacity:1},1000).
-              delay(3000).
-              animate({opacity:0},1000, laserRock);
+          animate({rotate:'-=5deg'},2500).
+          animate({rotate:'+=15deg'},2500).
+          animate({rotate:'-=5deg'},2500).
+          animate({rotate:'+=15deg'},2500).
+          animate({rotate:'-=5deg'},2500, laserRock)
   }
 );
+$(document).ready(
+  function laserBeam() {
+      $("#laser-left-beam").
+          delay(1000).
+          animate({opacity:1},1000).
+          delay(1000).
+          animate({opacity:0},1000, laserBeam);
+      }
+    );
+
+$(document).ready(
+  function minilaserRock1() {
+    $("#l1").
+          animate({rotate:'-=15deg',top:'+=20',left:'+=10'},1500).
+          animate({rotate:'+=15deg',top:'-=20',left:'-=10'},1500,minilaserRock1);
+        }
+      );
+
+$(document).ready(  
+  function minilaserRock2() {
+    $("#l2").
+          animate({rotate:'+=20deg',top:'-=10'},2000).
+          animate({rotate:'-=20deg',top:'+=10'},2000,minilaserRock2);
+  }
+);        
+
+$(document).ready(
+  function minilaserRock3() {
+    $("#l3").
+          animate({rotate:'-=6deg',top:'+=30',left:'-=15'},3000).
+          animate({rotate:'+=6deg',top:'-=30',left:'+=15'},3000,minilaserRock3);
+    }
+);        
+
+// $(document).ready(
+//   function laserrightmicrowave() {
+//     $("#laser-right-microwave").
+//           animate({rotate:'-=6deg',top:'+=30',left:'-=15'},3000).
+//           animate({rotate:'+=6deg',top:'-=30',left:'+=15'},3000,laserrightmicrowave);
+//     }
+// );   
+
 
 
 // Little planets
