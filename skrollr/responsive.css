@@ -54,6 +54,8 @@
 	#satellite-1-container {top: 1360px ;}
 	#distance-block {top: 1810px;}
 	#laser-container {top: 2130px;}
+	#pros-cons-container {top: 2850px;}
+
 }
 
 @media (max-width:700px){
@@ -196,6 +198,8 @@
 		left: 60%;
 		width: 224%;
 	}
+	html, body {height: 3950px !important;}
+	#skrollr-body {height: 3950px !important;}
 }
 
 @media (max-width:480px){
