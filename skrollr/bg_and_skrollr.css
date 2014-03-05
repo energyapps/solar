@@ -1,6 +1,5 @@
 html, body {
 	font-family: 'Open Sans', sans-serif;
-	height: 4100px !important;
 }
 
 
@@ -20,8 +19,6 @@ html, body {
 */			/*background-color: rgba(2,2,2,0.9);*/
 		height: 4100px;
 		overflow-x:hidden;
-		overflow-y: hidden; 
-		/*edit to get rid of double bar*/
 	}
 
 
