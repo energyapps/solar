@@ -146,8 +146,10 @@ function ufoReAppear4(){
       animate({top:'+=100',left:'+=45%'},2000).
       animate({left:'+=45%'},3000).
       delay(1000).
-      animate({top:'+=280',},2000);
+      animate({top:'+=280',opacity:0},2000);
 };
+
+      // animate({top:'+=280',opacity:0,width:'0px',height:'0px'},2000);
 
 // Would be awesome to make it disappear as it goes to earth, by gettings "smaller"
 
