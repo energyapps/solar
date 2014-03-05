@@ -26,7 +26,13 @@
 	#laser-left {width: 100%}
 	#laser-right {
 		width: 100%;
-		top: 210px;
+		top: 180px;
+	}
+	#laser-right-legend {
+		margin: 0 auto;
+		float: none;
+		width: 95%;
+		left: 0px;
 	}
 	#laser-left-large img {
 		width: 60%;
@@ -40,10 +46,15 @@
 		right: 40px;
 		top: -40px;
 	}
+	#laser-left-beam {
+		top: 4.1%;
+		left: 50%;
+		width: 247%
+	}
 	/*Move the big blocks*/
 	#satellite-1-container {top: 1340px;}
 	#distance-block {top: 1810px;}
-	#laser-container {top: 2100px;}
+	#laser-container {top: 2130px;}
 }
 
 @media (max-width:700px){
@@ -104,6 +115,11 @@
 	#laser-left-large {
 		right: 30px;
 		top: 0px;
+	}
+	#laser-left-beam {
+		top:4.8%;
+		left:50.5%;
+		width: 221%;
 	}
 }
 
@@ -176,6 +192,11 @@
 	#laser-left-mini-lasers {
 		left: 10%;
 	}
+	#laser-left-beam {
+		top: 5.5%;
+		left: 60%;
+		width: 224%;
+	}
 }
 
 @media (max-width:480px){
@@ -209,7 +230,7 @@
 	#ufo-beam {top: -18px ; left: 50px  }
 
 /*first satellite*/
-	.floating-header {left: 0px ; text-align: center;}
+	.floating-header {left: 0px !important; text-align: center;}
 	.floating-header h3 span{ display: none; }
 
 	#sat img {
@@ -271,6 +292,19 @@
 		right:-5px;
 		top: 60px;
 	}
+	#laser-arrow {
+		left: 58px;
+		width: 56px;
+		background-position: left;
+	}
+	#laser-text {
+		width: 76px;
+		left: 80%
+	}
+	#yessir2 {top: 35px; position: relative;}
+	#proconspacer #insidespacer {position: relative;top: 40px;}
+
+
 	/*pros and cons*/
 	.right-text-container, .left-text-container {font-size: 14px; line-height: 16px; width: 98%;}
 }

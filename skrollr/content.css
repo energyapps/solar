@@ -1,3 +1,8 @@
+/*div {
+	border: 1px solid black;
+}*/
+
+			#satellite-2-header, #satellite-1-header {left:8%;}
 
 			/*Microwve Satellite*/
 			#sat-and-beam {
@@ -21,17 +26,6 @@
 			#sat img {
 				width: 100%;
 				margin-top: -60px; 
-			}
-
-			#sat-beam {
-				z-index: 60;
-				position: absolute;
-				top: 0px;
-				left: 200px;
-				height: 100%;
-				width: 600px;
-				background-color: pink;
-				opacity: 0.5;
 			}
 
 			#text-and-arrow1 {
@@ -428,7 +422,7 @@
 			}
 
 			#laser-left-beam {
-				opacity: 0;
+				/*opacity: 0;*/
 				z-index: 54;
 				position: absolute;
 				top: 0px;
@@ -585,49 +579,42 @@
 			float: left;
 		}
 
-
-
 		#mini-laser {
 			width: 50%;
 			position: relative;
-			top: 30px;
-			height: 300px;
 			float: left;
-			left: -50%;			
-		}
-
-		#mini-laser-inner img {
-			height: 100%;
-		}
-
-		#mini-microwave {
-			width: 50%;
-			position: relative;
-			top: 30px;
-			height: 300px;
-			float: left;
-			right: -50%;
-			/*background-color: rgba(4,4,4,0.3)*/
+			left: -50%;	
 		}
 
 		#mini-laser-inner {
 			position: relative;
 			margin: 0 auto;
-			height: 300px;
-			width: 100px;
-			/*background-color: rgba(4,4,4,0.3)	*/
+			width: 35%;
+		}
+
+		#mini-laser-inner img {
+			width: 100%;
+		}
+
+		#mini-microwave {
+			width: 50%;
+			position: relative;
+			float: left;
+			right: -50%;
 		}
 
 		#mini-microwave-inner {
 			position: relative;
 			margin: 0 auto;
-			height: 300px;
-			width: 390px;
-			/*background-color: rgba(4,4,4,0.3)	*/
+			width: 90%;
 		}
 
 		#mini-microwave-inner img {
-			height: 100%;		
+			width: 100%;		
+		}
+
+		#yessir1, #yessir2 {
+			clear: both;
 		}
 
 		.pro-con-title {
@@ -704,19 +691,13 @@
 			padding-top: 25px;
 		}
 
-		.right-text-container {width: 75%; float: left;}
-		.left-text-container  {width: 75%; float: right;}
+		.right-text-container {width: 75%; float: left;position: relative;}
+		.left-text-container  {width: 75%; float: right; position: relative;}
+		#middle-pro-inner {position: relative;}
+		#middle-con-inner {position: relative;}
 
 		#proconspacer {width:100%;   clear: both}
 		#proconspacer #insidespacer {
 			width: 75%; 
 			border-bottom: 1px solid #f15a24; 
 			height: 60px; margin: 0 auto;}
-
-		#yessir1 {
-
-		}
-
-		#yessir2 {
-			clear: both;
-		}
