@@ -29,21 +29,21 @@ if ($(window).scrollTop() > 900) {
 
 if ($(window).scrollTop() > 1200) {
   if (ufo_index === 2) {
-    console.log(ufo_index)
+    // console.log(ufo_index)
     ufoReAppear2();  
   };    
 };
 
 if ($(window).scrollTop() > 2300) {
   if (ufo_index === 3) {
-    console.log(ufo_index)
+    // console.log(ufo_index)
     ufoReAppear3();  
   };    
 };  
 
 if ($(window).scrollTop() > 3100) {
   if (ufo_index === 4) {
-    console.log(ufo_index)
+    // console.log(ufo_index)
     ufoReAppear4();  
   };    
 };  
@@ -103,7 +103,7 @@ function ufoExit() {
 function ufoReAppear(){
     ufo_index += 1;
   //addClass('ufo_small').
-    console.log('reappear')
+    // console.log('reappear')
     $("#ufo"),
       // addClass('ufo-small'),
     $("#ufo-beam").
@@ -116,7 +116,7 @@ function ufoReAppear(){
 function ufoReAppear2(){
     ufo_index += 1;
   //addClass('ufo_small').
-    console.log('reappear2')
+    // console.log('reappear2')
     $("#ufo-container").
       animate({top:'2119px'},100).
       animate({left:'+=80%'},4000).
@@ -130,7 +130,7 @@ function ufoReAppear2(){
 function ufoReAppear3(){
     ufo_index += 1;
   //addClass('ufo_small').
-    console.log('reappear3')
+    // console.log('reappear3')
     $("#ufo-container").
       animate({top:'2600px'},1000).
       animate({left:'-=160%',top:'+=600px'},5500);
@@ -139,7 +139,7 @@ function ufoReAppear3(){
 function ufoReAppear4(){
     ufo_index += 1;
   //addClass('ufo_small').
-    console.log('reappear4')
+    // console.log('reappear4')
     $("#ufo-container").
       animate({top:'3600px'},100).
       animate({left:'+=10%'},1000).
