@@ -14,7 +14,7 @@ $(document).ready(function (){
   //UFO EXIT
 $(window).scroll(function(){
   if (ufo_index === 0) {
-    if ($(window).scrollTop() > 100) {
+    if ($(window).scrollTop() > 200) {
       ufoExit();  
     };  
   };
@@ -22,11 +22,33 @@ $(window).scroll(function(){
 
 if ($(window).scrollTop() > 900) {
     if (ufo_index === 1) {
-      console.log(ufo_index)
+      // console.log(ufo_index)
       ufoReAppear();  
     };    
   };
-  
+
+if ($(window).scrollTop() > 1200) {
+  if (ufo_index === 2) {
+    console.log(ufo_index)
+    ufoReAppear2();  
+  };    
+};
+
+if ($(window).scrollTop() > 2300) {
+  if (ufo_index === 3) {
+    console.log(ufo_index)
+    ufoReAppear3();  
+  };    
+};  
+
+if ($(window).scrollTop() > 3100) {
+  if (ufo_index === 4) {
+    console.log(ufo_index)
+    ufoReAppear4();  
+  };    
+};  
+
+
 //   // //SATELLITE ENTER/EXT
 //   if ($(window).scrollTop() > 500 && sat_index == 0) {
 //     console.log('wassup')
@@ -82,15 +104,52 @@ function ufoReAppear(){
     ufo_index += 1;
   //addClass('ufo_small').
     console.log('reappear')
-    $("#ufo").
-      addClass('ufo-small'),
+    $("#ufo"),
+      // addClass('ufo-small'),
+    $("#ufo-beam").
+      addClass('beam-none'),
     $("#ufo-container").
       animate({top:'1600px'},100).
       animate({opacity:1,left:'-=160%'},5200);
 };  
 
+function ufoReAppear2(){
+    ufo_index += 1;
+  //addClass('ufo_small').
+    console.log('reappear2')
+    $("#ufo-container").
+      animate({top:'2119px'},100).
+      animate({left:'+=80%'},4000).
+      delay(300).
+      animate({top:'+=50'},500).
+      animate({top:'-=100'},1000).
+      animate({top:'+=50'},500).
+      animate({left:'+=80%'},1000);
+};  
 
+function ufoReAppear3(){
+    ufo_index += 1;
+  //addClass('ufo_small').
+    console.log('reappear3')
+    $("#ufo-container").
+      animate({top:'2600px'},1000).
+      animate({left:'-=160%',top:'+=600px'},5500);
+};
 
+function ufoReAppear4(){
+    ufo_index += 1;
+  //addClass('ufo_small').
+    console.log('reappear4')
+    $("#ufo-container").
+      animate({top:'3600px'},100).
+      animate({left:'+=10%'},1000).
+      animate({top:'+=100',left:'+=45%'},2000).
+      animate({left:'+=45%'},3000).
+      delay(1000).
+      animate({top:'+=280',},2000);
+};
+
+// Would be awesome to make it disappear as it goes to earth, by gettings "smaller"
 
 
 
