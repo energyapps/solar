@@ -22,28 +22,28 @@ $(window).scroll(function(){
 
 if ($(window).scrollTop() > 900) {
     if (ufo_index === 1) {
-      // console.log(ufo_index)
+      
       ufoReAppear();  
     };    
   };
 
 if ($(window).scrollTop() > 1200) {
   if (ufo_index === 2) {
-    // console.log(ufo_index)
+    
     ufoReAppear2();  
   };    
 };
 
 if ($(window).scrollTop() > 2300) {
   if (ufo_index === 3) {
-    // console.log(ufo_index)
+    
     ufoReAppear3();  
   };    
 };  
 
-if ($(window).scrollTop() > 3100) {
+if ($(window).scrollTop() > 2700) {
   if (ufo_index === 4) {
-    // console.log(ufo_index)
+    
     ufoReAppear4();  
   };    
 };  
@@ -51,7 +51,7 @@ if ($(window).scrollTop() > 3100) {
 
 //   // //SATELLITE ENTER/EXT
 //   if ($(window).scrollTop() > 500 && sat_index == 0) {
-//     console.log('wassup')
+
 //     satelliteEntrance();  
 //   };
 //   if ($(window).scrollTop() < 450 && sat_index == 1) {
@@ -103,7 +103,7 @@ function ufoExit() {
 function ufoReAppear(){
     ufo_index += 1;
   //addClass('ufo_small').
-    // console.log('reappear')
+    
     $("#ufo"),
       // addClass('ufo-small'),
     $("#ufo-beam").
@@ -116,7 +116,7 @@ function ufoReAppear(){
 function ufoReAppear2(){
     ufo_index += 1;
   //addClass('ufo_small').
-    // console.log('reappear2')
+    
     $("#ufo-container").
       animate({top:'2119px'},100).
       animate({left:'+=80%'},4000).
@@ -130,7 +130,7 @@ function ufoReAppear2(){
 function ufoReAppear3(){
     ufo_index += 1;
   //addClass('ufo_small').
-    // console.log('reappear3')
+    
     $("#ufo-container").
       animate({top:'2600px'},1000).
       animate({left:'-=160%',top:'+=600px'},5500);
@@ -139,14 +139,14 @@ function ufoReAppear3(){
 function ufoReAppear4(){
     ufo_index += 1;
   //addClass('ufo_small').
-    // console.log('reappear4')
+    
     $("#ufo-container").
       animate({top:'3600px'},100).
       animate({left:'+=10%'},1000).
       animate({top:'+=100',left:'+=45%'},2000).
       animate({left:'+=45%'},3000).
       delay(1000).
-      animate({top:'+=280',opacity:0},2000);
+      animate({top:'+=280',scale:'-=1'},2000);
 };
 
       // animate({top:'+=280',opacity:0,width:'0px',height:'0px'},2000);
@@ -166,9 +166,9 @@ function ufoReAppear4(){
 //         satelliteEntrance( $(window).scrollLeft() > 500 );
 //       });    
 //         function satelliteEntrance( right_of_bridge ) {
-//           console.log('satentrance1')
+
 //             if( $(".satellite").css('opacity') == 0 && right_of_bridge )
-//             console.log('satentrance2') 
+
 //           $(".satellite").delay(1100).animate({opacity:1,left:'+=500'},2200);
 //         }
 //     });
@@ -177,7 +177,7 @@ function ufoReAppear4(){
 
 // function satelliteEntrance() {
 // sat_index += 1;   
-// console.log(sat_index)
+
 //     $(".satellite").
 //       delay(1100).
 //       animate({left:'+=60%'},2200);
@@ -185,7 +185,7 @@ function ufoReAppear4(){
 
 // function satelliteExit() {
 // sat_index -= 1;
-//   console.log('get away')
+
 //     $(".satellite").
 //       delay(1100).
 //       animate({left:'-=60%'},2200);
