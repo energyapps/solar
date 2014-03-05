@@ -208,7 +208,8 @@
 
 			#earth img {
 				width: 105%;
-
+				position: relative;
+				top: 3px;
 			}
 </style>
 <link rel="stylesheet" type="text/css" href="content.css">
@@ -223,7 +224,7 @@
 		<div id="bg2" data-0="background-position:0px 0px;" 
 		data-end="background-position:-500px -11000px;"></div>
 
-		<div id="progress" data-0="width:0%;background:rgb(64,74,76);" data-end="width:100%;background:rgb(255,123,0);"></div>
+		<!-- <div id="progress" data-0="width:0%;background:rgb(64,74,76);" data-end="width:100%;background:rgb(255,123,0);"></div> -->
 
 		<div class="planet" id="sun">
 			<img src="../images/final_images/sun.png">
@@ -412,16 +413,16 @@
 				<div class="floating-header"><h3><span>{</span>Microwave Solar Satellites<span>}</span></h3></div>
 			</div>
 						<div id="mini-laser" class="planet"
-				data-2400="left: -50%;"
-				data-2800="left: 0;"
+				data-2000="left: -50%;"
+				data-2400="left: 0;"
 			>
 				<div id="mini-laser-inner">
 					<img src="../images/final_images/laser.png">
 				</div>
 			</div>
 			<div id="mini-microwave" class="planet"
-				data-2400="right: -50%;"
-				data-2800="right: 0;"
+				data-2000="right: -50%;"
+				data-2400="right: 0;"
 			>
 				<div id="mini-microwave-inner">
 					<img src="../images/final_images/microwave.png">
@@ -433,8 +434,8 @@
 			<div id="yessir1">
 				<div class="left-pro procontext" >
 					<div class="left-text-container"
-						data-2600="left:-50%; opacity: 0;"
-						data-3000="left:0; opacity:1"
+						data-2300="left:-50%; opacity: 0;"
+						data-2600="left:0; opacity:1"
 					>
 						<p>Relatively low startup costs in the $500 million to $1 billion range.</p>
 						<p>Single Launch per satellite would be self assembling, lowering costs and risks substantially.</p>
@@ -443,8 +444,9 @@
 				</div>
 				<div class="middle-pro">
 					<div id="middle-pro-inner"
-						data-2600="top: -2000px; opacity: 0;"
-						data-3000="top:30px; opacity:1"
+						data-2300="top: -2000px; opacity: 0; display:none;"
+						data-2301="display:block;"
+						data-2600="top:30px; opacity:1"
 					> 
 						<div class="pro-con-title">P</div>
 						<div class="pro-con-title">R</div>
@@ -454,8 +456,8 @@
 				</div>
 				<div class="right-pro procontext">
 					<div class="right-text-container"
-						data-2600="right:-50%; opacity: 0;"
-						data-3000="right:0; opacity:1"
+						data-2300="right:-50%; opacity: 0;"
+						data-2600="right:0; opacity:1"
 					>
 						<p>Steady transmission of power through rain and clouds.</p>
 						<p>Safely transmit power through air at intensity no greater than midday sun.</p>
@@ -469,8 +471,8 @@
 			<div id="yessir2">
 				<div class="left-pro procontext">
 					<div class="left-text-container"
-						data-2900="left:-50%; opacity: 0;"
-						data-3300="left:0%; opacity:1"
+						data-2400="left:-50%; opacity: 0;"
+						data-2700="left:0%; opacity:1"
 					>
 						<p>Comparatively low power of each individual satellite, in the area of 1 to 10 MW per satellite, would require several satellite to make a substantial impact.</p>
 						<p>There are several safety concerns with lasers in space, such as blinding and weaponization.</p>
@@ -479,8 +481,9 @@
 				</div>
 				<div class="middle-pro">
 					<div id="middle-con-inner"
-						data-2900="top: -2000px; opacity: 0;"
-						data-3300="top:30px; opacity:1"
+						data-2400="top: -2000px; opacity: 0; display:none;"
+						data-2401="display:block;"
+						data-2700="top:30px; opacity:1"
 					>
 						<div class="pro-con-title">C</div>
 						<div class="pro-con-title">O</div>
@@ -490,8 +493,8 @@
 				</div>
 				<div class="right-pro procontext">
 					<div class="right-text-container"
-						data-2900="right:-50%; opacity: 0;"
-						data-3300="right:0; opacity:1"
+						data-2400="right:-50%; opacity: 0;"
+						data-2700="right:0; opacity:1"
 					>
 						<p>Production cost in the tons of billions of dollars range.</p>
 						<p>The terrestrial receiver would be several kilometers in diameter.</p>
