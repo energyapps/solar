@@ -16,8 +16,6 @@ html, body {
 	#skrollr-body {
 		position: relative;
 		width: 100%;
-/*			background-image: url('../images/stardust/stardust_@2X.png');
-*/			/*background-color: rgba(2,2,2,0.9);*/
 		height: 4100px;
 		overflow-x:hidden;
 		overflow-y: hidden; 
