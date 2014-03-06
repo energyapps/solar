@@ -701,3 +701,48 @@
 			width: 75%; 
 			border-bottom: 1px solid #f15a24; 
 			height: 60px; margin: 0 auto;}
+
+
+
+
+/*Moon*/
+
+#earth-moon-container {
+	position: absolute;
+	width: 118px;
+	height: 118px;
+	bottom: 190px;
+	left: 10%;
+}
+#earth-moon {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 65;
+	background-image:url('../images/final_images/icons_moon.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: 118px 118px;
+}
+
+.earthy-index {
+	z-index: 58 !important;
+}
+
+/*comet*/
+#comet-container {
+	z-index: 57;
+	position: fixed;
+	top: 300px;
+	left: -100%;
+}
+
+#comet {
+	
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100px;
+	height: auto;
+}
+#comet img {width: 100%;}

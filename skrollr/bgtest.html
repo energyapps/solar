@@ -50,11 +50,6 @@
 	position: relative;
 	top: 0px;
 	left: 0px;
-	width: 147px;
-	height: 86px;
-}
-
-#ufo {
 	width: 100%;
 	height: auto;
 }
@@ -73,11 +68,6 @@
 	background-size: 111px 203px;	
 }
 
-.ufo-small {
-	width: 73px !important;
-	height: 43px !important;
-	background-size: 73px 43px !important; 		
-}
 .beam-none {
 	display: none;
 }
@@ -201,6 +191,7 @@
 				bottom:0px;
 				z-index: 60;
 				margin: 0 auto;
+				height: auto;
 			}
 
 			#earth img {
@@ -241,6 +232,13 @@
 			</div>
 			<div id="ufo-beam" class=""></div>
 		</div>
+
+		<div id="comet-container">
+			<div id="comet" class="">
+				<img src="../images/final_images/icons_comet.png">
+			</div>
+		</div>
+
 
 		<!-- First content block -->
 		<div id="first-content">
@@ -302,7 +300,10 @@
 		</style>
 
 		<div id="distance-block">
-			<div id="distance-block-inner">
+			<div id="distance-block-inner"
+				data-0="opacity:0.1;"
+				data-1200="opacity:0.1"
+				data-1500="opacity:1;">
 				<div id="distance-text" class="floating-header">
 					<h3>So... how far into space do</h3> <h3>microwave transmitting solar satellites need to go?</h3>
 				</div>
@@ -501,9 +502,11 @@
 			</div>
 		</div>
 
-
 		<div id="earth">
 			<img src="../images/final_images/earth.png">
+		</div>
+		<div id="earth-moon-container">
+			<div id="earth-moon"></div>
 		</div>
 		
 	</div>

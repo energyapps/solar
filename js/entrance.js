@@ -1,7 +1,7 @@
 //indexes/placeholders
 var sat_index = 0;
 var ufo_index = 0;
-
+var comet_index = 0;
 
 //// ONLOAD ENTRANCES   ////
 $(document).ready(function (){                
@@ -124,7 +124,9 @@ function ufoReAppear2(){
       animate({top:'+=50'},500).
       animate({top:'-=100'},1000).
       animate({top:'+=50'},500).
-      animate({left:'+=80%'},1000);
+      animate({rotate:'-=15deg'},100).
+      animate({left:'+=80%'},1000).
+      animate({rotate:'+=15deg'},10);
 };  
 
 function ufoReAppear3(){
@@ -148,13 +150,6 @@ function ufoReAppear4(){
       delay(1000).
       animate({top:'+=280',scale:'-=1'},2000);
 };
-
-      // animate({top:'+=280',opacity:0,width:'0px',height:'0px'},2000);
-
-// Would be awesome to make it disappear as it goes to earth, by gettings "smaller"
-
-
-
 
 
 // //////////////////////
@@ -276,6 +271,84 @@ $(document).ready(
           animate({rotate:'+=6deg',top:'-=30',left:'+=15'},3000,minilaserRock3);
     }
 );        
+
+// move the comet
+$(document).ready(function (){                
+    comet();  
+}); 
+
+// see if its even
+function isOdd(num) { return num % 2;}
+
+
+function comet(){
+  comet_index += 1;
+  var fart = isOdd(comet_index);
+  console.log(fart);
+  if (comet_index === 1) {
+    $("#comet-container").
+      animate({rotate:"-=160deg"}).
+      animate({left:'+=250%',top:'500px'},5500,comet)    
+  } else if (fart === 0){
+    $("#comet-container").
+      delay(3000).
+      animate({rotate:"+=140deg",top:'100px'}).
+      animate({left:'-=250%',top:'500px'},5500,comet)    
+  } else if (fart === 1) {
+    $("#comet-container").
+      delay(4000).
+      animate({rotate:"-=140deg",top:'100px'}).
+      animate({left:'+=250%',top:'800px'},5500,comet)    
+  };
+    
+};
+
+  function ufoReAppear3(){
+    ufo_index += 1;
+  //addClass('ufo_small').
+    
+    $("#ufo-container").
+      animate({top:'2600px'},1000).
+      animate({left:'-=160%',top:'+=600px'},5500);
+};
+
+
+
+// Move that MOON SON 
+$(document).ready(function (){                
+    mooningOn();  
+
+}); 
+
+function mooningOn(){
+    $("#earth-moon-container").
+      removeClass('earthy-index').
+      animate({left:'70%', bottom: '-200'},5000),
+      $("#earth-moon").
+        animate({rotate:'-=175deg'},5000, mooningOff)
+      // removeClass('earthy-index');
+      // removeClass('earthy-index', mooning);      
+  };
+
+  function mooningOff(){
+    $("#earth-moon-container").
+      
+      addClass('earthy-index').
+      animate({left:'10%', bottom: '190'},5000),
+      $("#earth-moon").
+        animate({rotate:'-=175deg'},5000, mooningOn);
+      // removeClass('earthy-index');
+      // removeClass('earthy-index', mooning);      
+  };
+
+    // $("#ufo"),
+    //   // addClass('ufo-small'),
+    // $("#ufo-beam").
+    //   addClass('beam-none'),
+    // $("#ufo-container").
+    //   animate({top:'1600px'},100).
+    //   animate({opacity:1,left:'-=160%'},5200);
+
 
 // $(document).ready(
 //   function laserrightmicrowave() {
