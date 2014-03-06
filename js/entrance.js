@@ -49,17 +49,6 @@ if ($(window).scrollTop() > 2700) {
 };  
 
 
-//   // //SATELLITE ENTER/EXT
-//   if ($(window).scrollTop() > 500 && sat_index == 0) {
-
-//     satelliteEntrance();  
-//   };
-//   if ($(window).scrollTop() < 450 && sat_index == 1) {
-//     satelliteExit();  
-//   };
-
-
-
 
 });
 
@@ -95,11 +84,6 @@ function ufoExit() {
       animate({opacity:1,left:'+=135%'},1800);
 };    
 
-// //display none after fly away!!!!!!
-// function die() {
-// 	$(this).addClass('noDisplay');
-// };
-
 function ufoReAppear(){
     ufo_index += 1;
   //addClass('ufo_small').
@@ -115,7 +99,6 @@ function ufoReAppear(){
 
 function ufoReAppear2(){
     ufo_index += 1;
-  //addClass('ufo_small').
     
     $("#ufo-container").
       animate({top:'2119px'},100).
@@ -131,7 +114,6 @@ function ufoReAppear2(){
 
 function ufoReAppear3(){
     ufo_index += 1;
-  //addClass('ufo_small').
     
     $("#ufo-container").
       animate({top:'2600px'},1000).
@@ -140,7 +122,6 @@ function ufoReAppear3(){
 
 function ufoReAppear4(){
     ufo_index += 1;
-  //addClass('ufo_small').
     
     $("#ufo-container").
       animate({top:'3600px'},100).
@@ -150,60 +131,9 @@ function ufoReAppear4(){
       delay(1000).
       animate({top:'+=280',scale:'-=1'},2000);
 };
+ 
 
-
-// //////////////////////
-// Satelliate (<----lol) stuff//
-// /////////////////////
-
-// $(document).ready(function() {
-//       $(window).bind('scroll', function() {
-//         satelliteEntrance( $(window).scrollLeft() > 500 );
-//       });    
-//         function satelliteEntrance( right_of_bridge ) {
-
-//             if( $(".satellite").css('opacity') == 0 && right_of_bridge )
-
-//           $(".satellite").delay(1100).animate({opacity:1,left:'+=500'},2200);
-//         }
-//     });
-
-
-
-// function satelliteEntrance() {
-// sat_index += 1;   
-
-//     $(".satellite").
-//       delay(1100).
-//       animate({left:'+=60%'},2200);
-// };
-
-// function satelliteExit() {
-// sat_index -= 1;
-
-//     $(".satellite").
-//       delay(1100).
-//       animate({left:'-=60%'},2200);
-// };
-
-
-// //////////////////////
-// UFO stuff//
-// /////////////////////
-// function microwaveRock() {
-//     $("#sat").
-//       delay(100).
-//       animate({rotate:'+=1deg'},500).
-//       animate({rotate:'-=1deg'},500).
-//       animate({rotate:'+=1deg'},500).
-//       animate({rotate:'-=1deg'},500).
-//       animate({rotate:'+=1deg'},500).
-//       animate({rotate:'-=1deg'},500).
-//       animate({rotate:'+=1deg'},500).
-//       animate({rotate:'-=1deg'},500);
-// };    
-
-// SUN ANIMATION
+// Moving the microwave, side to side
 $(document).ready(
   function microwaveRock() {
     $("#sat img").
@@ -211,16 +141,16 @@ $(document).ready(
       animate({rotate:'-=15deg'},5000, microwaveRock);
   });
 
+// Old stuff?
+// $("#ufo-beam").
+//     animate({opacity:0},100, 'linear'),
+//     $("#ufo-container").
+//       delay(900).
+//       animate({left:'-=50',top:'+=375'},1200).
+//       animate({opacity:1,left:'+=135%'},1800);
 
-$("#ufo-beam").
-    animate({opacity:0},100, 'linear'),
-    $("#ufo-container").
-      delay(900).
-      animate({left:'-=50',top:'+=375'},1200).
-      animate({opacity:1,left:'+=135%'},1800);
 
-
-
+// Move the laser around and minilasers
 $(document).ready(
   function laserRock() {
     $("#laser-left-large").
@@ -272,47 +202,41 @@ $(document).ready(
     }
 );        
 
-// move the comet
+
+// Move the Comet
 $(document).ready(function (){                
     comet();  
 }); 
 
-// see if its even
+  // see if its even....could have some issues with 'num' as a variable without defining 'num'
 function isOdd(num) { return num % 2;}
 
 
 function comet(){
   comet_index += 1;
   var fart = isOdd(comet_index);
-  console.log(fart);
   if (comet_index === 1) {
     $("#comet-container").
       animate({rotate:"-=160deg"}).
       animate({left:'+=250%',top:'500px'},5500,comet)    
+  } else if (comet_index === 12 || comet_index === 22 || comet_index === 32){
+    $("#comet-container").
+      delay(7000).
+      animate({rotate:"+=140deg",top:'100px',scale:'4'}).
+      animate({left:'-=250%',top:'500px'},2000,comet)    
   } else if (fart === 0){
     $("#comet-container").
       delay(7000).
-      animate({rotate:"+=140deg",top:'100px'}).
+      animate({rotate:"+=140deg",top:'100px',scale:'1'}).
       animate({left:'-=250%',top:'500px'},5500,comet)    
   } else if (fart === 1) {
     $("#comet-container").
       delay(4000).
-      animate({rotate:"-=140deg",top:'100px'}).
+      animate({rotate:"-=140deg",top:'100px',scale:'1'}).
       animate({left:'+=250%',top:'800px'},5500,comet)    
   };
     
 };
-
-  function ufoReAppear3(){
-    ufo_index += 1;
-  //addClass('ufo_small').
-    
-    $("#ufo-container").
-      animate({top:'2600px'},1000).
-      animate({left:'-=160%',top:'+=600px'},5500);
-};
-
-
 
 // Move that MOON SON 
 $(document).ready(function (){                
@@ -340,38 +264,4 @@ function mooningOn(){
       // removeClass('earthy-index');
       // removeClass('earthy-index', mooning);      
   };
-
-    // $("#ufo"),
-    //   // addClass('ufo-small'),
-    // $("#ufo-beam").
-    //   addClass('beam-none'),
-    // $("#ufo-container").
-    //   animate({top:'1600px'},100).
-    //   animate({opacity:1,left:'-=160%'},5200);
-
-
-// $(document).ready(
-//   function laserrightmicrowave() {
-//     $("#laser-right-microwave").
-//           animate({rotate:'-=6deg',top:'+=30',left:'-=15'},3000).
-//           animate({rotate:'+=6deg',top:'-=30',left:'+=15'},3000,laserrightmicrowave);
-//     }
-// );   
-
-
-
-// Little planets
-// $(document).ready(function littleEarth() {
-//     $("#distance-legend-earth").
-//       animate({rotate:'+=15deg'},5000).
-//       animate({rotate:'-=15deg'},5000, littleEarth);
-// });
-
-
-
-
-
-
-
-
 
