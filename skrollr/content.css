@@ -731,7 +731,7 @@
 
 /*comet*/
 #comet-container {
-	z-index: 57;
+	z-index: 52;
 	position: fixed;
 	top: 300px;
 	left: -100%;

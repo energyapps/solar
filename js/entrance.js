@@ -291,7 +291,7 @@ function comet(){
       animate({left:'+=250%',top:'500px'},5500,comet)    
   } else if (fart === 0){
     $("#comet-container").
-      delay(3000).
+      delay(7000).
       animate({rotate:"+=140deg",top:'100px'}).
       animate({left:'-=250%',top:'500px'},5500,comet)    
   } else if (fart === 1) {
