@@ -14,6 +14,11 @@ It _should_ work in all modern browsers and degrade gracefully (enough) in IE8. 
 Research, article and programming by [Daniel Wood](http://twitter.com/DanielPWWood).
 Graphics and Design by [Sarah Gerrity](http://twitter.com/gurrity).
 
+Known Bugs As of 3/6/14
+ * pros and cons are stacked oddly at the bottom
+ * js broken in IE
+ * ie8- conditional code not working
+
 Here is out Wish List for other easter eggs and interactions:
  * Solar rays from sun, pulsing through space.
  * Satellites beam power to earth towards the bottom of the page, lights up miniature grid on earth.
