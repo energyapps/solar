@@ -221,17 +221,17 @@ function comet(){
       animate({left:'+=250%',top:'500px'},5500,comet)    
   } else if (comet_index === 12 || comet_index === 22 || comet_index === 32){
     $("#comet-container").
-      delay(7000).
+      delay(9000).
       animate({rotate:"+=140deg",top:'100px',scale:'4'}).
       animate({left:'-=250%',top:'500px'},2000,comet)    
   } else if (fart === 0){
     $("#comet-container").
-      delay(7000).
+      delay(14000).
       animate({rotate:"+=140deg",top:'100px',scale:'1'}).
       animate({left:'-=250%',top:'500px'},5500,comet)    
   } else if (fart === 1) {
     $("#comet-container").
-      delay(4000).
+      delay(12000).
       animate({rotate:"-=140deg",top:'100px',scale:'1'}).
       animate({left:'+=250%',top:'800px'},5500,comet)    
   };
