@@ -15,6 +15,6 @@ Research, article and programming by [Daniel Wood](http://twitter.com/DanielPWWo
 Graphics and Design by [Sarah Gerrity](http://twitter.com/gurrity).
 
 Here is out Wish List for other easter eggs and interactions:
-Solar rays from sun, pulsing through space.
-Satellites beam power to earth towards the bottom of the page, lights up miniature grid on earth.
-[Astronaut flying away to country music](http://www.youtube.com/watch?v=mdGfBL3rS4Q).
+ * Solar rays from sun, pulsing through space.
+ * Satellites beam power to earth towards the bottom of the page, lights up miniature grid on earth.
+ * [Astronaut flying away to country music](http://www.youtube.com/watch?v=mdGfBL3rS4Q).
