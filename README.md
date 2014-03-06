@@ -20,6 +20,7 @@ Known Bugs As of 3/6/14
  * ie8- conditional code not working
 
 Here is out Wish List for other easter eggs and interactions:
+ * Scroll bar on the left side to allow easier scrolling past frame
  * Solar rays from sun, pulsing through space.
  * Satellites beam power to earth towards the bottom of the page, lights up miniature grid on earth.
  * [Astronaut flying away to country music](http://www.youtube.com/watch?v=mdGfBL3rS4Q).
