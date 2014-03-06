@@ -1,0 +1,33 @@
+It's Space Week on Energy.gov. We're exploring the solar system (and beyond) to highlight the contributions of the Energy Department and our National Labs to the U.S. space program. Check back every day this week for new videos, interactive graphics, timelines and more -- and submit your questions for our Lab Twitter chat on dark energy, happening this Friday, March 7. Use the hashtag #SpaceWeek to join the conversation on Twitter, Facebook, Google+ and Instagram.
+
+You can’t collect solar power at night. Well, at least, not on earth. Since its space week, we thought it'd be appropriate to look at one promising but perhaps futuristic idea that could change the face of solar power generation: Space-Based Solar Power (SBSP). While the Energy Department is not actively researching SBSP, we hope you take a moment to learn about this far out concept.
+
+The idea of capturing solar power in space for use as energy on Earth has been around since the beginning of the space age. In the last few years, however, scientists around the globe -- and several researchers at the Energy Department’s own Lawrence Livermore National Laboratory (LLNL) -- have shown how recent technological developments may make this concept a reality sooner than you’d think.
+
+On earth, solar power is greatly reduced by night, cloud cover, the earth’s atmosphere and seasonality. Some 30 percent of all incoming solar radiation never makes it to ground level. In space the sun is always shining, the tilt of the Earth doesn't prevent the collection of power and there’s no atmosphere to reduce the intensity of the sun’s rays. This fact makes putting solar panels into space a tempting possibility. Additionally, SBSP can be used to get reliable and clean energy to folks in remote bases and villages around the world, without unnecessary reliance on a large local power plant.
+
+How does it work?
+
+Self-assembling satellites are launched into space, along with reflectors and a microwave or laser power transmitter. Reflectors or inflatable mirrors spread along a vast swath of space, directing solar radiation onto solar panels. These panels convert solar power into either a microwave or a laser, and beam uninterrupted power down to Earth. On Earth, power-receiving stations collect the beam and add it to the electric grid.
+
+The two most commonly discussed designs for SBSP are a large, deeper space microwave transmitting satellite and a smaller, nearer laser transmitting satellite.
+
+Microwave Transmitting Satellites
+
+Microwave transmitting satellites orbit earth in geostationary orbit (GEO), about 35,000 km above earth’s surface. Proposed satellites of this kind have been massive, with solar reflectors spanning up to 3 km, weighing over 80,000 metric tons. They would be capable of generating multiple gigawatts of power, enough to power a major U.S. city.
+
+The long wavelength of the microwave requires a long antenna, and allows power to be beamed through the earth’s atmosphere, rain or shine, at safe, low intensity levels hardly stronger than the midday sun. Birds and planes wouldn’t notice much of anything flying across their paths.
+
+The estimated cost of launching, assembling and operating a microwave-equipped GEO satellite is in the tens of billions of dollars. It would likely require as many as 40 launches for all necessary materials to reach space. On Earth, the rectenna used for collecting the microwave beam would be anywhere between 3 and 10 km in diameter, a huge area of land, and likely challenging to purchase and develop.
+
+Laser Transmitting Satellites 
+
+Laser transmitting satellites, as described by our friends at LLNL, orbit in low Earth orbit (LEO) at about 400 km above the Earth’s surface. Weighing in in at less than 10 metric tons, this satellite is a fraction of the weight of its microwave counterpart. Cheaper, too: Some predict that a laser-equipped SBSP satellite would cost nearly $500 million to launch and operate. It would be possible to launch the entire self-assembling satellite in a single rocket, drastically reducing the cost and time to production. Also, by using a laser transmitter, the beam will only be about 2 meters in diameter, instead of several km, a drastic and important reduction.
+
+To make this possible, the satellite’s solar power beaming system employs a diode-pumped alkali laser. First demonstrated at LLNL in 2002 -- and currently still under development there -- this laser would be about the size of a kitchen table, and powerful enough to beam power to Earth at an extremely high efficiency, over 50 percent.
+
+While this satellite is far lighter, cheaper and easier to achieve than its microwave counterpart, it has two main issues beyond funding. The idea of high-powered lasers in space brings about fears of weaponization to many. But this can be remedied by limiting the direction in which the laser system can transmit its power. 
+
+At its smaller size, there is a correspondingly lower capacity of about 1 to 10 megawatts per satellite. Therefore, this satellite would be best as part of a fleet of similar satellites, used together. 
+
+You could say SBSP is a long way off or pie in the sky (puns intended) -- and you'd be mostly right. But many technologies already exist to make this feasible, and many aren't far behind. While the Energy Department isn't currently developing any SBSP technology specifically, many of the remaining technologies needed for SBSP may well be developed independently in the years to come. And while we don't know the future of power harvested from space, we are excited to see ideas like this take flight (okay last pun, I promise).

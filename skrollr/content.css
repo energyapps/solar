@@ -606,7 +606,8 @@
 		#mini-microwave-inner {
 			position: relative;
 			margin: 0 auto;
-			width: 90%;
+			top: 50px;
+			width: 70%;
 		}
 
 		#mini-microwave-inner img {
@@ -728,6 +729,48 @@
 .earthy-index {
 	z-index: 58 !important;
 }
+
+
+/*Final Mini Satellite*/
+
+#final-mini-satellite-container {
+	position: absolute;
+	width: 140px;
+	height: 107px;
+	bottom: 280px;
+	right: 20%;
+
+}
+#final-mini-satellite  {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 65;
+	background-image:url('../images/final_images/microwave3.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: 140px 107px;
+	transform:rotate(37deg);
+	-ms-transform:rotate(37deg); /* IE 9 */
+	-webkit-transform:rotate(37deg); /* Opera, Chrome, and Safari */
+}
+
+
+#final-mini-satellite-beam {
+	position: relative;
+	top: 100px;
+	left: 106px;
+	width: 32px;
+	height: 121px;
+	background-image:url('../images/final_images/icon_microwaves.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: 32px 121px;
+		transform:rotate(-25deg);
+	-ms-transform:rotate(-25deg); /* IE 9 */
+	-webkit-transform:rotate(-25deg); /* Opera, Chrome, and Safari */
+}
+
 
 /*comet*/
 #comet-container {
